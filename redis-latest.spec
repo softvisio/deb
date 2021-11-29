@@ -1,0 +1,35 @@
+#!/bin/bash
+# vim: ft=sh
+
+NAME=redis-latest
+EPOCH=1
+VERSION=$(git ls-remote --tags git://github.com/antirez/redis.git | perl -lne 'm[refs/tags/([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
+REVISION=1
+ARCHITECTURE=source
+DESCRIPTION="A persistent key-value database"
+OPTFLAGS="-O2 -g" # rpm --eval "%{optflags}"
+LD_FLAGS=         # rpm --eval "%{build_ldflags}" XXX
+MAKE_FLAGS="-j4"  # rpm --eval "%{_smp_mflags}"
+
+function build() {
+    apt install -y gcc make
+
+    curl -fsSL https://github.com/antirez/redis/archive/$VERSION.tar.gz | tar --strip-components=1 -xz
+
+    # disable Redis protected mode [1] as it is unnecessary in context of Docker
+    # (ports are not automatically exposed when running inside Docker, but rather explicitly by specifying -p / -P)
+    # [1]: https://github.com/antirez/redis/commit/edd4d555df57dc84265fdfb4ef59a4678832f6da
+
+    # grep -q '\''^#define CONFIG_DEFAULT_PROTECTED_MODE 1$'\'' /usr/src/redis-stable/src/server.h
+    # sed -ri '\''s!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!'\'' /usr/src/redis-stable/src/server.h
+    # grep -q '\''^#define CONFIG_DEFAULT_PROTECTED_MODE 0$'\'' /usr/src/redis-stable/src/server.h
+
+    # for future reference, we modify this directly in the source instead of just supplying a default configuration flag because apparently "if you specify any argument to redis-server, [it assumes] you are going to specify everything"
+    # see also https://github.com/docker-library/redis/issues/4#issuecomment-50780840
+    # (more exactly, this makes sure the default behavior of "save on SIGTERM" stays functional by default)
+
+    make $MAKE_FLAGS
+
+    # install
+    make install INSTALL="install -p" PREFIX=$DESTDIR/usr/local
+}

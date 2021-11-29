@@ -1,0 +1,32 @@
+#!/bin/bash
+# vim: ft=sh
+
+NAME=repo-pgsql
+EPOCH=1
+VERSION=1.0.0
+REVISION=1
+ARCHITECTURE=all
+DEPENDS=
+DESCRIPTION="Official latest PostgreSQL repository"
+
+function build() {
+
+    cat << EOF > $DEBIAN/postinst
+#!/bin/bash
+
+VERSION_CODENAME=\$(source /etc/os-release && echo \$VERSION_CODENAME)
+
+sed -i -e "/VERSION_CODENAME/ s/VERSION_CODENAME/\$VERSION_CODENAME/" /etc/apt/sources.list.d/pgdg.list
+EOF
+    chmod +x $DEBIAN/postinst
+
+    apt install -y gpg
+
+    mkdir -p $DESTDIR/usr/share/keyrings
+    curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor -o $DESTDIR/usr/share/keyrings/pgdg-archive-keyring.gpg
+
+    mkdir -p $DESTDIR/etc/apt/sources.list.d
+    cat << EOF > $DESTDIR/etc/apt/sources.list.d/pgdg.list
+deb [signed-by=/usr/share/keyrings/pgdg-archive-keyring.gpg] https://apt.postgresql.org/pub/repos/apt VERSION_CODENAME-pgdg main
+EOF
+}
