@@ -14,6 +14,11 @@ function _prune() { (
     git gc --prune=all --aggressive
 
     # git lfs prune
+
+    # git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc
+
+    # git reflog expire --expire-unreachable=now --all
+    # git gc --prune=now
 ); }
 
 pushd $script_dir
