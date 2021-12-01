@@ -9,31 +9,29 @@ apt install -y git-filter-repo
 function _prune() { (
     set -e
 
-    git filter-repo --force --partial --invert-paths --path dists
+    # remove files, that were deleted from dists
+    git filter-repo --analyze
 
-    git gc --prune=all --aggressive
+    tail +3 .git/filter-repo/analysis/path-deleted-sizes.txt | tr -s ' ' | cut -d ' ' -f 5- | grep -Pe ^dists/ > .git/filter-repo/analysis/path-deleted.txt
 
-    # git lfs prune
+    cat .git/filter-repo/analysis/path-deleted.txt
 
-    # git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc
+    git filter-repo --force --partial --invert-paths --paths-from-file .git/filter-repo/analysis/path-deleted.txt
 
-    # git reflog expire --expire-unreachable=now --all
-    # git gc --prune=now
+    # git garbage collection
+    git reflog expire --expire-unreachable=now --all
+    git gc --prune=now --aggressive
 ); }
 
 pushd $script_dir
-
-mv dists dists-backup
 
 _prune
 
 error=$?
 
-mv dists-backup dists
+rm -rf .git/filter-repo
 
 if [[ $error == 0 ]]; then
-    git add dists
-
     git ci -m"chore: dists prune" -a
 
     git push --force --all
