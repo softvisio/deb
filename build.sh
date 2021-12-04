@@ -82,10 +82,10 @@ function _pack() { (
 
     if [[ $ARCHITECTURE == "all" ]]; then
         BUILD_ARCH=all
-        TARGET=$_DISTS/binary-all-pool/${NAME}_$VERSION-${REVISION}_all.deb
+        TARGET=$_DISTS/binary-all/${NAME}_$VERSION-${REVISION}_all.deb
     else
         BUILD_ARCH=$ARCH
-        TARGET=$_DISTS/$VERSION_CODENAME/$_COMPONENT/binary-$ARCH/pool/${NAME}_$VERSION-${REVISION}_$ARCH.deb
+        TARGET=$_DISTS/$VERSION_CODENAME/$_COMPONENT/binary-$ARCH/${NAME}_$VERSION-${REVISION}_$ARCH.deb
     fi
 
     # debian/control
