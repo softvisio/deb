@@ -35,12 +35,13 @@ function _prune() { (
     # remove files, that were deleted from dists
     git filter-repo --analyze
 
-    cat .git/filter-repo/analysis/path-deleted-sizes.txt
-
     tail +3 .git/filter-repo/analysis/path-deleted-sizes.txt | tr -s ' ' | cut -d ' ' -f 5- | grep -Pe ^dists/ > .git/filter-repo/analysis/path-deleted.txt
 
     # has files to prune
-    if [ -s .git/filter-repo/analysis/path-deleted.txt ]; then
+    if [ -s ".git/filter-repo/analysis/path-deleted.txt" ]; then
+        echo Files to prune:
+        cat .git/filter-repo/analysis/path-deleted.txt
+
         git filter-repo --force --partial --invert-paths --paths-from-file .git/filter-repo/analysis/path-deleted.txt
     fi
 
