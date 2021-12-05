@@ -48,6 +48,7 @@ function _prune() { (
 
 pushd $SCRIPT_DIR
 
+echo Updating ...
 _update
 
 if [[ $? != 0 ]]; then
@@ -55,6 +56,7 @@ if [[ $? != 0 ]]; then
     exit 1
 fi
 
+echo Prune ...
 _prune
 
 error=$?
@@ -62,6 +64,8 @@ error=$?
 rm -rf .git/filter-repo
 
 if [[ $error == 0 ]]; then
+    echo Pushing ...
+
     git push --force --all
     git push --force --tags
 fi
