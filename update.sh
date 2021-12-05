@@ -39,10 +39,10 @@ function _prune() { (
 
     tail +3 .git/filter-repo/analysis/path-deleted-sizes.txt | tr -s ' ' | cut -d ' ' -f 5- | grep -Pe ^dists/ > .git/filter-repo/analysis/path-deleted.txt
 
-    echo Pruned files:
-    cat .git/filter-repo/analysis/path-deleted.txt
-
-    git filter-repo --force --partial --invert-paths --paths-from-file .git/filter-repo/analysis/path-deleted.txt
+    # has files to prune
+    if [ -s .git/filter-repo/analysis/path-deleted.txt ]; then
+        git filter-repo --force --partial --invert-paths --paths-from-file .git/filter-repo/analysis/path-deleted.txt
+    fi
 
     # git garbage collection
     git reflog expire --expire-unreachable=now --all
