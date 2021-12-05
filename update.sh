@@ -1,25 +1,69 @@
 #!/bin/bash
 
 set -u
-set -e
 
-# apt install -y apt-utils
+apt install -y apt-utils git-filter-repo
 
-for codename in focal impish; do
-    mkdir -p dists/$codename/main/binary-all
-    apt-ftparchive --arch all packages dists > dists/$codename/main/binary-all/Packages
-    # cat dists/$codename/main/binary-all/Packages | gzip -9 > dists/$codename/main/binary-all/Packages.gz
+SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 
-    mkdir -p dists/$codename/main/binary-amd64
-    apt-ftparchive --arch amd64 packages dists/$codename/main/binary-amd64 > dists/$codename/main/binary-amd64/Packages
-    # cat dists/$codename/main/binary-amd64/Packages | gzip -9 > dists/$codename/main/binary-amd64/Packages.gz
+function _update() { (
+    set -e
 
-    apt-ftparchive release -c=dists/$codename/aptftp.conf dists/$codename > dists/$codename/Release
+    for codename in focal impish; do
+        mkdir -p dists/$codename/main/binary-all
+        apt-ftparchive --arch all packages dists > dists/$codename/main/binary-all/Packages
+        # cat dists/$codename/main/binary-all/Packages | gzip -9 > dists/$codename/main/binary-all/Packages.gz
 
-    gpg --clearsign --yes -u zdm@softvisio.net -o dists/$codename/InRelease dists/$codename/Release
-    rm -f dists/$codename/Release
-done
+        mkdir -p dists/$codename/main/binary-amd64
+        apt-ftparchive --arch amd64 packages dists/$codename/main/binary-amd64 > dists/$codename/main/binary-amd64/Packages
+        # cat dists/$codename/main/binary-amd64/Packages | gzip -9 > dists/$codename/main/binary-amd64/Packages.gz
 
-git add .
-git ci -m"chore: dists update" -a
-git push
+        apt-ftparchive release -c=dists/$codename/aptftp.conf dists/$codename > dists/$codename/Release
+
+        gpg --clearsign --yes -u zdm@softvisio.net -o dists/$codename/InRelease dists/$codename/Release
+        rm -f dists/$codename/Release
+    done
+
+    git add .
+    git ci -m"chore: dists update" -a
+
+); }
+
+function _prune() { (
+    set -e
+
+    # remove files, that were deleted from dists
+    git filter-repo --analyze
+
+    tail +3 .git/filter-repo/analysis/path-deleted-sizes.txt | tr -s ' ' | cut -d ' ' -f 5- | grep -Pe ^dists/ > .git/filter-repo/analysis/path-deleted.txt
+
+    cat .git/filter-repo/analysis/path-deleted.txt
+
+    git filter-repo --force --partial --invert-paths --paths-from-file .git/filter-repo/analysis/path-deleted.txt
+
+    # git garbage collection
+    git reflog expire --expire-unreachable=now --all
+    git gc --prune=now --aggressive
+); }
+
+pushd $SCRIPT_DIR
+
+_update
+
+if [[ $? != 0 ]]; then
+    popd
+    exit 1
+fi
+
+_prune
+
+error=$?
+
+rm -rf .git/filter-repo
+
+if [[ $error == 0 ]]; then
+    git push --force --all
+    git push --force --tags
+fi
+
+popd
