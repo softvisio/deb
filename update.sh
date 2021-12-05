@@ -30,7 +30,7 @@ function _update() { (
 ); }
 
 function _prune() { (
-    set -e
+    # set -e
 
     # remove files, that were deleted from dists
     git filter-repo --analyze
