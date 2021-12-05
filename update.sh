@@ -43,6 +43,8 @@ function _prune() { (
         cat .git/filter-repo/analysis/path-deleted.txt
 
         git filter-repo --force --partial --invert-paths --paths-from-file .git/filter-repo/analysis/path-deleted.txt
+    else
+        echo No files to prune
     fi
 
     # git garbage collection
