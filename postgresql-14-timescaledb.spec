@@ -1,7 +1,7 @@
 #!/bin/bash
 # vim: ft=sh
 
-NAME=pg14-timescaledb
+NAME=postgresql-14-timescaledb
 EPOCH=1
 VERSION=$(git ls-remote --tags git://github.com/timescale/timescaledb.git | perl -lne 'm[refs/tags/([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
