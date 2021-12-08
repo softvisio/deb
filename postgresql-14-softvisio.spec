@@ -5,7 +5,7 @@ NAME=postgresql-14-softvisio
 EPOCH=1
 VERSION=$(git ls-remote --tags git://github.com/softvisio/pg-softvisio.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
-ARCHITECTURE=all
+ARCHITECTURE=source
 DESCRIPTION="Admin tools for PostgreSQL"
 PG_VERSION=14
 
