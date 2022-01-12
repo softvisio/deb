@@ -1,0 +1,16 @@
+#!/bin/bash
+# vim: ft=sh
+
+NAME=nvim
+EPOCH=1
+VERSION=$(curl --silent https://api.github.com/repos/neovim/neovim/releases/tags/nightly | perl -lne 'm[NVIM\s+v([\d.]+)-dev\+(\d+)]sm ? print $1 . "." . $2 : next')
+REVISION=1
+ARCHITECTURE=all
+DEPENDS=
+DESCRIPTION="Neovim nightly build"
+PREFIX=/usr/local
+
+function build() {
+    mkdir -p ${DESTDIR}${PREFIX}
+    curl -fsSL https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz | tar -C ${DESTDIR}${PREFIX} --strip-components=1 -xz
+}
