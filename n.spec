@@ -4,7 +4,7 @@
 NAME=n
 EPOCH=1
 VERSION=$(git ls-remote --tags git://github.com/tj/n.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=1
+REVISION=2
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Node version management"
