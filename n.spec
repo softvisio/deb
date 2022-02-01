@@ -20,6 +20,7 @@ function build() {
 
 export N_PREFIX=/usr/n
 
+NODE_OPTIONS=--trace-warnings --trace-uncaught
 NPM_PREFIX=\$(realpath ~)/.npm/bin
 
 [[ :\$PATH: == *":\$NPM_PREFIX:"* ]] || PATH+=":\$NPM_PREFIX"
