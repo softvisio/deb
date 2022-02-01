@@ -4,7 +4,7 @@
 NAME=n
 EPOCH=1
 VERSION=$(git ls-remote --tags git://github.com/tj/n.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=2
+REVISION=3
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Node version management"
@@ -19,8 +19,8 @@ function build() {
 #!/bin/sh
 
 export N_PREFIX=/usr/n
+export NODE_OPTIONS=--trace-warnings --trace-uncaught
 
-NODE_OPTIONS=--trace-warnings --trace-uncaught
 NPM_PREFIX=\$(realpath ~)/.npm/bin
 
 [[ :\$PATH: == *":\$NPM_PREFIX:"* ]] || PATH+=":\$NPM_PREFIX"
