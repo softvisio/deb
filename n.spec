@@ -19,7 +19,6 @@ function build() {
 #!/bin/sh
 
 export N_PREFIX=/usr/n
-export NODE_OPTIONS="--trace-warnings --trace-uncaught"
 
 NPM_PREFIX=\$(realpath ~)/.npm/bin
 
