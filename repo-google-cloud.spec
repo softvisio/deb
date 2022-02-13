@@ -1,7 +1,7 @@
 #!/bin/bash
 # vim: ft=sh
 
-NAME=repo-google-gloud
+NAME=repo-google-cloud
 EPOCH=1
 VERSION=1.0.0
 REVISION=1
