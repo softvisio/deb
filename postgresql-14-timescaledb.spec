@@ -5,7 +5,7 @@ POSTGRESQL_VERSION=14
 
 NAME=postgresql-$POSTGRESQL_VERSION-timescaledb
 EPOCH=1
-VERSION=$(git ls-remote --tags git://github.com/timescale/timescaledb.git | perl -lne 'm[refs/tags/([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
+VERSION=$(git ls-remote --tags https://github.com/timescale/timescaledb.git | perl -lne 'm[refs/tags/([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
 ARCHITECTURE=source
 DESCRIPTION="TimescaleDB extension for PostgreSQL"

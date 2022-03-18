@@ -3,7 +3,7 @@
 
 NAME=nginx-latest
 EPOCH=1
-VERSION=$(git ls-remote --tags git://github.com/nginx/nginx.git | perl -lne 'm[refs/tags/release-([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
+VERSION=$(git ls-remote --tags https://github.com/nginx/nginx.git | perl -lne 'm[refs/tags/release-([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
 ARCHITECTURE=source
 DESCRIPTION="A high performance web server and reverse proxy server"
