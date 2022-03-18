@@ -5,7 +5,7 @@ POSTGRESQL_VERSION=14
 
 NAME=postgresql-$POSTGRESQL_VERSION-softvisio-admin
 EPOCH=1
-VERSION=$(git ls-remote --tags git://github.com/softvisio/postgresql-softvisio-admin.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
+VERSION=$(git ls-remote --tags https://github.com/softvisio/postgresql-softvisio-admin.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
 ARCHITECTURE=source
 DESCRIPTION="Custom functions for PostgreSQL"

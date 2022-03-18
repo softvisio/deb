@@ -4,7 +4,7 @@
 NAME=nvim
 EPOCH=1
 
-VERSION=$(git ls-remote --tags git://github.com/neovim/neovim.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
+VERSION=$(git ls-remote --tags https://github.com/neovim/neovim.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
 ARCHITECTURE=all
 DEPENDS=
