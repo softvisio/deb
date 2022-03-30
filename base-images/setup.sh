@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -u
 set -e
 
 POSTGRESQL_VERSION=14
