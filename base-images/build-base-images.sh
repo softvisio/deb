@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -u
 set -e
 
 SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
