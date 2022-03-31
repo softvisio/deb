@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -u
-
 apt install -y apt-utils git-filter-repo
 
 SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
