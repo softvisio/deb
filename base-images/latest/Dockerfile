@@ -4,6 +4,8 @@ LABEL maintainer="zdm"
 
 USER root
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 ADD . /tmp/setup
 
 WORKDIR /var/local
