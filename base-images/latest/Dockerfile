@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
-LABEL maintainer="zdm"
+LABEL \
+    org.opencontainers.image.source="https://github.com/softvisio/deb" \
+    maintainer="zdm"
 
 USER root
 

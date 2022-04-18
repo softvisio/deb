@@ -61,7 +61,7 @@ function _build_docker() { (
         -v $SCRIPT_DIR:/var/local \
         --workdir /var/local \
         --entrypoint /var/local/build.sh \
-        "softvisio/deb:$2" \
+        "ghcr.io/softvisio/deb:$2" \
         "$1" local
 
     if [[ $? != 0 ]]; then exit 1; fi
