@@ -13,7 +13,7 @@ function _build_base_image() {
         --shm-size=1g \
         $SCRIPT_DIR
 
-    docker push softvisio/deb:$1
+    docker push ghcr.io/softvisio/deb:$1
 }
 
 _build_base_image latest
