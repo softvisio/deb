@@ -1,8 +1,6 @@
 FROM ubuntu:rolling
 
-LABEL \
-    org.opencontainers.image.source="https://github.com/softvisio/deb" \
-    maintainer="zdm"
+LABEL maintainer="zdm"
 
 USER root
 
