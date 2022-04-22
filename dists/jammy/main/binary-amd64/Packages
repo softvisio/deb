@@ -1,0 +1,70 @@
+Package: nginx-latest
+Architecture: amd64
+Version: 1:1.21.6-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 7020
+Depends:
+Filename: dists/jammy/main/binary-amd64/nginx-latest_1.21.6-1_amd64.deb
+Size: 2155626
+MD5sum: b7564489ea97e77b735edce75cc08a48
+SHA1: 1aed1ca6258aabc99b193d9f2d2953d261f94310
+SHA256: baac78b67b2253d48005bb7b326288e060240467b9cab7e016123b723c28263d
+SHA512: 890bfaf70b65e9c1e771d1159f6c532d790bdc68f59c9cbcd6eb363c7bdcc704edfa4faf79f081be7b73ade23993443a3afc8ba654f855f78e34355a68685e1a
+Description: A high performance web server and reverse proxy server
+
+Package: postgresql-14-softvisio-admin
+Architecture: amd64
+Version: 1:1.1.0-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 44
+Depends:
+Filename: dists/jammy/main/binary-amd64/postgresql-14-softvisio-admin_1.1.0-1_amd64.deb
+Size: 1922
+MD5sum: a166ef62c641333b519501989b38c90b
+SHA1: 99caea9174c2fbbb859e0e88762b845777590389
+SHA256: 7605c93eace566c7a99b355e429530074205289905bd46b424c2f7f4beb49b1d
+SHA512: b34d3247a161ed8aaba0443a04765b2ea940553fd7392ba3b922c40b914820eb9929e566086a9ba5b8ac7a1c4bc239f0332d84387b8dbda3d92756487a25b747
+Description: Custom functions for PostgreSQL
+
+Package: postgresql-14-softvisio-cron
+Architecture: amd64
+Version: 1:1.5.0-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 72
+Depends:
+Filename: dists/jammy/main/binary-amd64/postgresql-14-softvisio-cron_1.5.0-1_amd64.deb
+Size: 2034
+MD5sum: 39dcee3c35fc7c8664d4c8ac196a03e1
+SHA1: 75e4420b0e7585fd135495835d9db7744d62d25f
+SHA256: 91d0c1a9e774099d73c6ef93f11d0460a9ae1dcc8abcb91cbd9383cef2980c74
+SHA512: 0ce6ebb6d5101f1f5db1366cb11ed1a3e7d9566d274e0854d3e9b54077445208627dc33bdbdcdcfeef5615e86e3c9c20b94fd303ebf5f865c31fa72defcaf338
+Description: Custom functions for PostgreSQL
+
+Package: postgresql-14-softvisio-locks
+Architecture: amd64
+Version: 1:1.2.0-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 60
+Depends:
+Filename: dists/jammy/main/binary-amd64/postgresql-14-softvisio-locks_1.2.0-1_amd64.deb
+Size: 1306
+MD5sum: fe1ff64d63b24027be28a9aa17d854b3
+SHA1: 4ac97268733cd76622f9254935be1a31c2a173e4
+SHA256: 7bff4f9fb43acc1ea5edf560b2003782d000cbd788e96e0de1d9deeddbb067f3
+SHA512: c9cfc628b351ba16c888b027d3e1bc6a2af3e786a435d62747f5babd7c1400222bebcfd281d5cedea6662c7f5409b416dc193704a91c6a836d4dd1fc1d138b05
+Description: PostgreSQL backend locks
+
+Package: postgresql-14-timescaledb
+Architecture: amd64
+Version: 1:2.6.1-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 13720
+Depends:
+Filename: dists/jammy/main/binary-amd64/postgresql-14-timescaledb_2.6.1-1_amd64.deb
+Size: 3165098
+MD5sum: 7d0d33b998fd42564e4b760df396353e
+SHA1: b54d9b09943df412badb1f528dcebbc4791a0892
+SHA256: 2a1dd7af3f7a82b8ad8ba0b580acb3ab92e15382c5eb60c8016dd8a98cce5ef3
+SHA512: 6d759bf52b2a8f9ec0cd4a7b99a7f4f5b2e80d3af2c065d4be134c1404fcf20a5072e61a57154a7ce900a34b5fbdd331253a40815747d313eacd34cba22f5843
+Description: TimescaleDB extension for PostgreSQL
+
