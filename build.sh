@@ -113,8 +113,9 @@ if [ $# -eq 1 ]; then
     if [[ $ARCHITECTURE == "all" ]]; then
         _build_local
     else
-        _build_docker "$1" latest
-        _build_docker "$1" rolling
+        for codename in focal impish jammy; do
+            _build_docker "$1" $codename
+        done
     fi
 elif [ $# -eq 2 ]; then
     if [[ $2 == "local" ]]; then
