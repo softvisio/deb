@@ -7,7 +7,8 @@ SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 function _update() { (
     set -e
 
-    for codename in focal impish jammy; do
+    # for codename in focal impish jammy; do
+    for codename in jammy; do
         mkdir -p dists/$codename/main/binary-all
         apt-ftparchive --arch all packages dists > dists/$codename/main/binary-all/Packages
         # cat dists/$codename/main/binary-all/Packages | gzip -9 > dists/$codename/main/binary-all/Packages.gz

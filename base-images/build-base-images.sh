@@ -16,6 +16,7 @@ function _build_base_image() {
     docker push ghcr.io/softvisio/deb:$1
 }
 
-for codename in focal impish jammy; do
+# for codename in focal impish jammy; do
+for codename in jammy; do
     _build_base_image $codename
 done
