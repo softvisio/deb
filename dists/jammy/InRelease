@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all amd64
+Codename: jammy
+Components: main
+Date: Fri, 22 Apr 2022 14:52:51 +0000
+Label: Softvisio for Debian/Ubuntu repository
+Suite: jammy
+MD5Sum:
+ 253fcb7391e354a30d2266b56945b20f              155 Release
+ 0fa52656f626072046b95315401706d2             3198 main/binary-all/Packages
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Packages
+SHA1:
+ 0d23a85081447b6ae5be5e5fec82e2bb06c05e93              155 Release
+ 145a79aa27e20c1f48cfd2912107dddaa6ced2a3             3198 main/binary-all/Packages
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-amd64/Packages
+SHA256:
+ a3edfd79c7509b4abea1753750c102d45ee53b114c776e8be433bbeb67a01b34              155 Release
+ 03aaea81f225bcf85bef28f7b03cd2b6973621d0a6ec145876644a46264b55ad             3198 main/binary-all/Packages
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-amd64/Packages
+SHA512:
+ 0ddb5a389ea75d0bc4d29373985d575caa18600be0e973930de2ea27a697735f056d31251ecfad8fc55b52a716b4868be8d673d522de96f9f8137798d0141476              155 Release
+ bb7c664ea59e78d98058df9a36f803aaaafc55a61120afb764e26837cbb1bcb50a88a4635ad8d7c8102e051f1958f237c0ad0c34ee02bb00d23dbc0bd7aba662             3198 main/binary-all/Packages
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-amd64/Packages
+-----BEGIN PGP SIGNATURE-----
+
+iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmJiwUMSHHpkbUBzb2Z0
+dmlzaW8ubmV0AAoJEHSb4AfXJh4ew5MP/j7cjQs8EBaofwQpn1u8nkK6TJ8wDAbg
+37E2vz95IpTOWXG/9mpFWUjCtfX+iUtcq0Cx+Z6D1hNh6lg2hcoj8WTEDPpmDvee
+cVO/PM1VBscjCCCLqF9/G4w7DyOljhrMazRs/L6g5k6e1zS5+fKry16+Pk3HfU/N
+1Nk74GOAnsKtFuXWlsJ266WXfbNNzoxfPcPa+acId+t2IJsAw/BVqupYL+BblOH7
+vXlOkkaU6pDvpWzMNypz/FGgzE4tncrVMWt6gRrgb+2opnAbrHc2qM7FtZaFwii+
+CuUMpXZtwtyB9m1uw8GjQntU3+hnwxjVus3U87M5UBGjEHed7SIHVVt/xMSk+tP7
+l+Hsvy2k4zx6YsAxxlKOslHfpgTZCjc0ahrwWWx5gWFo2NQ3EgyK6xBSe2z2YQT3
+B6hdhWFTg4ApwPZk5ueamgsu14cW9/jPINNcKZAIvuAEjZEgOb9NDZGK2fWT/aGh
+ofTGPKqCaVRPbJc24nq7ahGB8R82A743TfNFUP4roE+8n6LPK7PffrGPjWkqzSyC
+wUdF8ULMj1H+OyUjlz4OohjO7DCSAPSc/LSbyr2Czz/YT0oq3FZV4WLOkBFudJmH
+/iolAD8MOYQM4rscf48bz+rRmEeG+6LudMI2ol2qlLmGJQgI96i3KqNiHvAAKL4H
+/6FFJQ2/zzTb
+=rnpn
+-----END PGP SIGNATURE-----
