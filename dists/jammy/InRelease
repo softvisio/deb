@@ -4,39 +4,39 @@ Hash: SHA512
 Architectures: all amd64
 Codename: jammy
 Components: main
-Date: Fri, 22 Apr 2022 21:49:55 +0000
+Date: Fri, 22 Apr 2022 21:50:19 +0000
 Label: Softvisio for Debian/Ubuntu repository
 Suite: jammy
 MD5Sum:
- e292d92216f60b9e2252bd561b9b7784              155 Release
+ 0af895471aa8dce14dd1b74a80785890              155 Release
  0fa52656f626072046b95315401706d2             3198 main/binary-all/Packages
  af4650c61ede2875c5fc60111e552ee5             2915 main/binary-amd64/Packages
 SHA1:
- 85d462e058651fead7cb54d580e5443d08e044c0              155 Release
+ a9cb57aafaffefbccaab273caca66299793c1735              155 Release
  145a79aa27e20c1f48cfd2912107dddaa6ced2a3             3198 main/binary-all/Packages
  1fb68ef29302caadd5a2268cac13055b43cc3ea5             2915 main/binary-amd64/Packages
 SHA256:
- b9695cbd608c41d2c74d5d586d522c52b9cab3d52254214454c95b527378cffb              155 Release
+ c9a6cd65e210e93b38970b1c7a57074b91071a5816305bfb8b13975684402d6a              155 Release
  03aaea81f225bcf85bef28f7b03cd2b6973621d0a6ec145876644a46264b55ad             3198 main/binary-all/Packages
  fd0851de16402833f21a03e8b9abadf45b2b243f04cadb22dffd02979f30e15f             2915 main/binary-amd64/Packages
 SHA512:
- e62c43b00e7733561c7d057c16709954398c3db9275400d245df911dd7e56728d02ee52766001b0fa4c4c47ba88250b3b9e7cb13edc81f9340bfe110159a5f49              155 Release
+ a2dd748b76750d88d40a675ea718fcd00729157c154491230ad88b6cca9c7a8c12daf4330096c9dfc2571c011c9554d9a94042f9d8852b9c526c8fb02236a676              155 Release
  bb7c664ea59e78d98058df9a36f803aaaafc55a61120afb764e26837cbb1bcb50a88a4635ad8d7c8102e051f1958f237c0ad0c34ee02bb00d23dbc0bd7aba662             3198 main/binary-all/Packages
  8c8ba32db95a1337974ba1fe1552d7a47c0181a6aa1b1ba953dc236625d4881a3c145ea51252c0e5c2ec621ccfe75a4681452fdda3039da44ac526225abe8725             2915 main/binary-amd64/Packages
 -----BEGIN PGP SIGNATURE-----
 
-iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmJjIwMSHHpkbUBzb2Z0
-dmlzaW8ubmV0AAoJEHSb4AfXJh4eisgP/0xZkqUdvObadZgTq14mdUZP3rjM7gwW
-SrXsH7kn7sGCX7rq+yReoEzOOV6tM3Uh2YZqLpiYt2uqDhxlaiSFgP0BUN2XP9o+
-Y8kyvCpJi3q+cA19QPpUYPjfOh5kJNqquUhcGqViMWZPkfJkqpruAsieUSYePakQ
-RGC3HIinMDzNp9pO1H2pP+CGTCE8rWZKxUKyagALcsrZ7RkLoPNyIPkqvrCeEIay
-CUbtbi6XidPwLbqwq+rSKAvmQb+cYt++nIRrakdeSrmv9FDPyD3eiYvxP9SxyUKf
-lH00dQTQfMgTFd57/mJBmr27UbLjWcKm890jWkYRWFynjyRlaXmffucEvIlXDNGC
-OAywDTaj4jIK9sp8IQje6EHgSJze4vr/Kokpq+rx/mmhidFI8/hwkyOj7lSijh0i
-52ZjxXh/k+Bfv8SV+0VNTJ/YNcZF4vNiEvrKF3HbvhinbKTu4B5jHBGRb371okye
-0I461QO1GE1HrAnoKPUdBqUQAYaMQ74zRgPqdFl7hfAMLqEr/CKDgkzjr5mzqTSR
-sqcNMk5zw/ZVvPPJp2RGfbJl/1WpF9ZHpQRN08ecBAn/Ztw0OCcLswd3qkpkqImy
-+WZuJXuGH/JECl3VXyVCf9kfvRcxXXendc8KtdXhHLeXw7mAL5+m6tDUCY8UZJys
-O1TzSj4m8EeX
-=m+Hx
+iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmJjIxsSHHpkbUBzb2Z0
+dmlzaW8ubmV0AAoJEHSb4AfXJh4et+8QAJEeK/BfhohMPQQEmppxajnQ7tvwAOKP
+I4ZY1njwgVK5e66AWmkkd5P4dCOyhq61N4bmG2+S7QKKu9dRok5MpLnGRBxP/ipO
+31o2NwcRiwRBJo9Jp6AbyfMEszpZPYtkBLDrLCGPUkEpRi8SEg4lG+hJsaD9xdS0
+zxJV/xMFpdnwK7MBE7lVIjH5DLYe8TXFJkzWFCGjLIsODKOusTyXq8DKElxlg7WG
+Qrfl5ziS4CMOJ0vqX9LVVZtOuMsIGDqr11mz8EJyJ6YMwYu9aM2o76u0t3VUIBAP
+jKSFGDZoOE7Wi4zwNSLRDkMAb6s6uwgfvpkZ2HzzAm2vsOhag6CmGBo25yysgnCL
+QFt2RlF+Qw3qh59geuVMxfTIjgL/2CBztyYrO1NDxJaymXtBGlxhiDpyQsIcVkUo
+XHUATf1uc+GfzsWK9Q7WyAQ/I5cF2Q322TZTh/g3vyc2/Y+3w12iike2LCYYIZ1K
+b7+Db/+TGPkPREn1fDU/3toCe0TWmzudz72B3OEblK+kSN1JmZmhScpn6/YBE0ff
+84XBZl8Yjr45eAkuQYVaAPoGbh0uu0M5W2bGIjZ9VLL8lU3eRnecXfO0lI8jme7B
+MrV82FE2Nyb3ZnbebfpzZhwkLxflB/oO9DjvVwHYmc6/+vTktbBLtot7LyTbNBdU
+N7CQwEfxUzQS
+=qSSD
 -----END PGP SIGNATURE-----
