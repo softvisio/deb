@@ -1,14 +1,13 @@
 #!/bin/bash
 
-apt install -y apt-utils git-filter-repo
-
 SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
+
+apt install -y apt-utils git-filter-repo
 
 function _update() { (
     set -e
 
-    # for codename in focal impish jammy; do
-    for codename in jammy; do
+    while read codename; do
         mkdir -p dists/$codename/main/binary-all
         apt-ftparchive --arch all packages dists > dists/$codename/main/binary-all/Packages
         # cat dists/$codename/main/binary-all/Packages | gzip -9 > dists/$codename/main/binary-all/Packages.gz
@@ -21,7 +20,7 @@ function _update() { (
 
         gpg --clearsign --yes -u zdm@softvisio.net -o dists/$codename/InRelease dists/$codename/Release
         rm -f dists/$codename/Release
-    done
+    done < "codenames.txt"
 
     git add .
     git ci -m"chore: dists update" -a
