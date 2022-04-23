@@ -57,7 +57,7 @@ function _build_local() {
 
 function _build_docker() { (
     docker run \
-        --rm -it --shm-size=1g \
+        --rm -i --shm-size=1g \
         -v $SCRIPT_DIR:/var/local \
         --workdir /var/local \
         --entrypoint /var/local/build.sh \
