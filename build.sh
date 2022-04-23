@@ -114,7 +114,7 @@ if [ $# -eq 1 ]; then
         _build_local
     else
         while read codename; do
-            _build_docker "$1" $codename
+            _build_docker "$1" "$codename"
         done < "codenames.txt"
     fi
 elif [ $# -eq 2 ]; then
