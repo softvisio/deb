@@ -113,10 +113,9 @@ if [ $# -eq 1 ]; then
     if [[ $ARCHITECTURE == "all" ]]; then
         _build_local
     else
-        # for codename in focal impish jammy; do
-        for codename in jammy; do
+        while read codename; do
             _build_docker "$1" $codename
-        done
+        done < "codenames.txt"
     fi
 elif [ $# -eq 2 ]; then
     if [[ $2 == "local" ]]; then

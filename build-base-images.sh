@@ -11,12 +11,15 @@ function _build_base_image() {
         --pull \
         --no-cache \
         --shm-size=1g \
-        $SCRIPT_DIR
+        $SCRIPT_DIR/base-images
 
     docker push ghcr.io/softvisio/deb:$1
 }
 
-# for codename in focal impish jammy; do
-for codename in jammy; do
+pushd $SCRIPT_DIR
+
+while read codename; do
     _build_base_image $codename
-done
+done < "codenames.txt"
+
+popd
