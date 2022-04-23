@@ -11,15 +11,15 @@ function _build_base_image() {
         --pull \
         --no-cache \
         --shm-size=1g \
-        $SCRIPT_DIR/base-images
+        .
 
     docker push ghcr.io/softvisio/deb:$1
 }
 
-pushd $SCRIPT_DIR
-
 while read codename; do
-    _build_base_image $codename
-done < "codenames.txt"
+    pushd $SCRIPT_DIR/base-images
 
-popd
+    _build_base_image $codename
+
+    popd
+done < "codenames.txt"
