@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 
-apt install -y apt-utils git-filter-repo
+apt-get install -y apt-utils git-filter-repo
 
 function _update() { (
     set -e
