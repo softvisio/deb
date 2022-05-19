@@ -20,7 +20,7 @@ sed -i -e "/VERSION_CODENAME/ s/VERSION_CODENAME/\$VERSION_CODENAME/" /etc/apt/s
 EOF
     chmod +x $DEBIAN/postinst
 
-    apt install -y gpg
+    apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
     curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor -o $DESTDIR/usr/share/keyrings/pgdg-archive-keyring.gpg

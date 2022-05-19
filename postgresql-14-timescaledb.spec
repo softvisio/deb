@@ -14,7 +14,7 @@ LD_FLAGS=         # rpm --eval "%{build_ldflags}" XXX
 MAKE_FLAGS="-j4"  # rpm --eval "%{_smp_mflags}"
 
 function build() {
-    apt install -y postgresql-server-dev-$POSTGRESQL_VERSION gcc cmake make libssl-dev libkrb5-dev libipc-run-perl
+    apt-get install -y postgresql-server-dev-$POSTGRESQL_VERSION gcc cmake make libssl-dev libkrb5-dev libipc-run-perl
 
     curl -fsSL https://github.com/timescale/timescaledb/archive/$VERSION.tar.gz | tar --strip-components=1 -xzf -
 

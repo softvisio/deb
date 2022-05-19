@@ -11,7 +11,7 @@ ARCHITECTURE=source
 DESCRIPTION="Custom functions for PostgreSQL"
 
 function build() {
-    apt install -y postgresql-server-dev-$POSTGRESQL_VERSION gcc cmake make libssl-dev libkrb5-dev libipc-run-perl
+    apt-get install -y postgresql-server-dev-$POSTGRESQL_VERSION gcc cmake make libssl-dev libkrb5-dev libipc-run-perl
 
     curl -fsSL https://github.com/softvisio/postgresql-softvisio-cron/archive/v$VERSION.tar.gz | tar --strip-components=1 -xzf -
 

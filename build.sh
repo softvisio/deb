@@ -23,7 +23,7 @@ DEPENDS=
 DESCRIPTION=
 MAINTAINER="zdm <zdm@softvisio.net>"
 
-# apt update
+# apt-get update
 
 # load spec
 . $1

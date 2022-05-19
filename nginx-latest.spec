@@ -12,7 +12,7 @@ LD_FLAGS=         # rpm --eval "%{build_ldflags}" XXX
 MAKE_FLAGS="-j4"  # rpm --eval "%{_smp_mflags}"
 
 function build() {
-    apt install -y gcc g++ make libpcre3-dev zlib1g-dev libssl-dev libmaxminddb-dev
+    apt-get install -y gcc g++ make libpcre3-dev zlib1g-dev libssl-dev libmaxminddb-dev
 
     curl -fsSL https://nginx.org/download/nginx-$VERSION.tar.gz | tar --strip-components=1 -xz
     git clone https://github.com/softvisio/nginx-http-geoip2

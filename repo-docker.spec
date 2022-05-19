@@ -21,7 +21,7 @@ EOF
     chmod +x $DEBIAN/postinst
 
     # install
-    apt install -y gpg
+    apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o $DESTDIR/usr/share/keyrings/docker-archive-keyring.gpg

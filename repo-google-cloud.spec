@@ -10,7 +10,7 @@ DEPENDS=
 DESCRIPTION="Official latest Google Cloud repository"
 
 function build() {
-    apt install -y gpg
+    apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
     curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | gpg --dearmor -o $DESTDIR/usr/share/keyrings/google-cloud-archive-keyring.gpg

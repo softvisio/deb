@@ -10,7 +10,7 @@ DEPENDS=
 DESCRIPTION="Official latest Google Chrome repository"
 
 function build() {
-    apt install -y gpg
+    apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
     curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o $DESTDIR/usr/share/keyrings/google-chrome-archive-keyring.gpg
