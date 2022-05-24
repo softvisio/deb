@@ -56,20 +56,6 @@ Description: PostgreSQL backend locks
 
 Package: postgresql-14-timescaledb
 Architecture: amd64
-Version: 1:2.6.1-1
-Maintainer: zdm <zdm@softvisio.net>
-Installed-Size: 13720
-Depends:
-Filename: dists/jammy/main/binary-amd64/postgresql-14-timescaledb_2.6.1-1_amd64.deb
-Size: 3164962
-MD5sum: bb6f36cf1dd85de9fb6327d838860029
-SHA1: b4870ccea1dff397c1585cf18c353ed1185325e8
-SHA256: 01ae47a03a186225f1d87fed798848bf17f41c1ab18e089b7f306d55ab46a21b
-SHA512: 4b459c71a464ea4772c74e1f91516eb447c6bba006fb9ae6767b8912a71e9ca638982d8b52deb96c3ad5b2c6d6667efd50b0035c893822a8df63663bed559593
-Description: TimescaleDB extension for PostgreSQL
-
-Package: postgresql-14-timescaledb
-Architecture: amd64
 Version: 1:2.7.0-1
 Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 14308
