@@ -15,7 +15,7 @@ function build() {
     apt-get install -y gcc g++ make libpcre3-dev zlib1g-dev libssl-dev libmaxminddb-dev
 
     curl -fsSL https://nginx.org/download/nginx-$VERSION.tar.gz | tar --strip-components=1 -xz
-    git clone https://github.com/softvisio/nginx-http-geoip2
+    # git clone https://github.com/softvisio/nginx-http-geoip2
     git clone https://github.com/softvisio/nginx-dynamic-upstream
 
     # build
@@ -27,6 +27,7 @@ function build() {
     # --with-mail=dynamic \
     # --with-mail_ssl_module \
     # --with-http_dav_module \
+    # --add-dynamic-module=nginx-http-geoip2 \
 
     ./configure \
         --sbin-path=/usr/local/sbin/nginx \
@@ -53,7 +54,6 @@ function build() {
         --with-http_sub_module \
         --with-http_v2_module \
         --with-stream_ssl_module \
-        --add-dynamic-module=nginx-http-geoip2 \
         --add-module=nginx-dynamic-upstream
 
     make $MAKE_FLAGS
