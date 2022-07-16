@@ -1,19 +1,5 @@
 Package: n
 Architecture: all
-Version: 1:8.2.0-7
-Maintainer: zdm <zdm@softvisio.net>
-Installed-Size: 304
-Depends:
-Filename: dists/binary-all/n_8.2.0-7_all.deb
-Size: 31998
-MD5sum: 8cdb0b4f1b0799eb2dcb9fdac6bcce72
-SHA1: b0fdcf47947583dbd35b1d7e0962df2690530ad8
-SHA256: 0910b4b8ac76f453ce2227ae520181c9fd86a85a3304b3b39398187be76a00e3
-SHA512: e8a45b48af89dc2faac7b1aae5d5d5d40aad379c6dbe87b08b6e20004076be212c226f5acbef44be42dc0b1b9937caffd85d95cca509c1f7cedfd4ad164a977a
-Description: Node version management
-
-Package: n
-Architecture: all
 Version: 1:9.0.0-7
 Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 304
