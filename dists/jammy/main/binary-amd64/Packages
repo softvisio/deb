@@ -1,19 +1,5 @@
 Package: nginx-latest
 Architecture: amd64
-Version: 1:1.23.0-1
-Maintainer: zdm <zdm@softvisio.net>
-Installed-Size: 6876
-Depends:
-Filename: dists/jammy/main/binary-amd64/nginx-latest_1.23.0-1_amd64.deb
-Size: 2115074
-MD5sum: ebfe3601e9ee4ec5d3e5ef6d9be9886b
-SHA1: 31b4358d785ec7044981d68f38cb66aee5a01897
-SHA256: 06af031f6a5196d4b22d59bbabe7924fd4f3fd285362e4bb2e757c46af422a10
-SHA512: 70f34047a3015453814e65a1b54a40cc7a8d4eb104fe8dc250ef6d0c0a7d78071f4192dac1935375c7387c2fcc9fac685a980df370abb0c15d8403d1c0d0782c
-Description: A high performance web server and reverse proxy server
-
-Package: nginx-latest
-Architecture: amd64
 Version: 1:1.23.1-1
 Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 6880
