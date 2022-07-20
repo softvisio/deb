@@ -12,6 +12,20 @@ SHA256: 06af031f6a5196d4b22d59bbabe7924fd4f3fd285362e4bb2e757c46af422a10
 SHA512: 70f34047a3015453814e65a1b54a40cc7a8d4eb104fe8dc250ef6d0c0a7d78071f4192dac1935375c7387c2fcc9fac685a980df370abb0c15d8403d1c0d0782c
 Description: A high performance web server and reverse proxy server
 
+Package: nginx-latest
+Architecture: amd64
+Version: 1:1.23.1-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 6880
+Depends:
+Filename: dists/jammy/main/binary-amd64/nginx-latest_1.23.1-1_amd64.deb
+Size: 2115484
+MD5sum: 3b2fc7e89fdc24a796ec4561f51eab4a
+SHA1: 98f7cb7be652a0401b7cc1a17c44ae209da5143b
+SHA256: bd5b6b24f13e707d74a9b3383ddb3788870afd5084d3e98413e6e243d5626fff
+SHA512: f1cc6425f6f739ef2a380c88e89da734c5f99e224d4130fe7d822dd02d68b0b3291f336d236ed94c9b7188fb51fdcc9f74f75649f034226a37b7d04dcda483cc
+Description: A high performance web server and reverse proxy server
+
 Package: postgresql-14-softvisio-admin
 Architecture: amd64
 Version: 1:1.1.0-1
