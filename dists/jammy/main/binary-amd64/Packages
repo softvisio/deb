@@ -68,3 +68,17 @@ SHA256: 7d7bd697667b1a7df96b49e23a53fbe476fc4317252c9b0c76697dee8363df82
 SHA512: 1b2c31b77bdadd7ac0947200c3143cdd3946d9cc2a62f5460cf4c208f4607033bb7046c778a77b9cb761e09ae26879991d7d80a4f769a11b8068d2d9d21742f0
 Description: TimescaleDB extension for PostgreSQL
 
+Package: postgresql-14-timescaledb
+Architecture: amd64
+Version: 1:2.7.2-1
+Maintainer: zdm <zdm@softvisio.net>
+Installed-Size: 14688
+Depends:
+Filename: dists/jammy/main/binary-amd64/postgresql-14-timescaledb_2.7.2-1_amd64.deb
+Size: 3251328
+MD5sum: 83d57e4cc34bc7e652cf0cdd57e1ddf8
+SHA1: 24db66570344abe9bba40cb9e9b2de2a893a3a13
+SHA256: 6dd5c60666670eca69a63cdc745e88e98aaa180d7053b1b2489191fe7a9adc42
+SHA512: cd7ed630d57c3098bfe140eb5839901875e2b8dfe77c2784de21adfb91d948254d890827980483271919f6ea22668772114b72843363075a9d1bfac68bca7cba
+Description: TimescaleDB extension for PostgreSQL
+
