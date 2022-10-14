@@ -2,7 +2,7 @@
 
 set -e
 
-POSTGRESQL_VERSION=14
+POSTGRESQL_VERSION=15
 
 apt-get update
 
