@@ -4,7 +4,7 @@
 NAME=repo-google-cloud
 EPOCH=1
 VERSION=1.0.0
-REVISION=1
+REVISION=2
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Official latest Google Cloud repository"
