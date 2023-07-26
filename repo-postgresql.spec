@@ -1,7 +1,7 @@
 #!/bin/bash
 # vim: ft=sh
 
-NAME=repo-pgsql
+NAME=repo-postgresql
 EPOCH=1
 VERSION=1.0.0
 REVISION=1
