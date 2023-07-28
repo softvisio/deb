@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 function _build_base_image() {
     docker build \
         --tag ghcr.io/softvisio/deb:$1 \
-        --file $1/Dockerfile \
+        --file $1/dockerfile \
         --pull \
         --no-cache \
         --shm-size=1g \
