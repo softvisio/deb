@@ -2,7 +2,7 @@
 # vim: ft=sh
 
 NAME=nginx-latest
-EPOCH=1
+EPOCH=2
 VERSION=$(git ls-remote --tags https://github.com/nginx/nginx.git | perl -lne 'm[refs/tags/release-([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=1
 ARCHITECTURE=source
@@ -16,7 +16,7 @@ function build() {
 
     curl -fsSL https://nginx.org/download/nginx-$VERSION.tar.gz | tar --strip-components=1 -xz
     # git clone https://github.com/softvisio/nginx-http-geoip2
-    git clone https://github.com/softvisio/nginx-dynamic-upstream
+    # git clone https://github.com/ZigzagAK/ngx_dynamic_upstream
 
     # build
     # --user=%{nginx_user} \
@@ -28,6 +28,7 @@ function build() {
     # --with-mail_ssl_module \
     # --with-http_dav_module \
     # --add-dynamic-module=nginx-http-geoip2 \
+    # --add-module=nginx-dynamic-upstream
 
     ./configure \
         --sbin-path=/usr/local/sbin/nginx \
@@ -53,8 +54,7 @@ function build() {
         --with-http_stub_status_module \
         --with-http_sub_module \
         --with-http_v2_module \
-        --with-stream_ssl_module \
-        --add-module=nginx-dynamic-upstream
+        --with-stream_ssl_module
 
     make $MAKE_FLAGS
 
