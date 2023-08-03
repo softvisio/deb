@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=nginx-latest
-EPOCH=2
+EPOCH=1
 VERSION=$(git ls-remote --tags https://github.com/nginx/nginx.git | perl -lne 'm[refs/tags/release-([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=1
+REVISION=2
 ARCHITECTURE=source
 DESCRIPTION="A high performance web server and reverse proxy server"
 OPTFLAGS="-O2 -g" # rpm --eval "%{optflags}"
