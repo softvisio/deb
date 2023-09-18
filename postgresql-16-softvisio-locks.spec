@@ -1,7 +1,7 @@
 #!/bin/bash
 # vim: ft=sh
 
-POSTGRESQL_VERSION=15
+POSTGRESQL_VERSION=16
 
 NAME=postgresql-$POSTGRESQL_VERSION-softvisio-locks
 EPOCH=1
