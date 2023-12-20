@@ -54,7 +54,8 @@ function build() {
         --with-http_stub_status_module \
         --with-http_sub_module \
         --with-http_v2_module \
-        --with-stream_ssl_module
+        --with-stream_ssl_module \
+        --with-stream_ssl_preread_module
 
     make $MAKE_FLAGS
 
