@@ -20,7 +20,7 @@ function _update() { (
 
         gpg --clearsign --yes -u zdm@softvisio.net -o dists/$codename/InRelease dists/$codename/Release
         rm -f dists/$codename/Release
-    done < "codenames.txt"
+    done < "versions.txt"
 
     git add .
     git ci -m"chore: dists update" -a

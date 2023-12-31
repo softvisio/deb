@@ -113,9 +113,9 @@ if [ $# -eq 1 ]; then
     if [[ $ARCHITECTURE == "all" ]]; then
         _build_local
     else
-        while read codename; do
-            _build_docker "$1" "$codename"
-        done < "codenames.txt"
+        while read version; do
+            _build_docker "$1" "$version"
+        done < "versions.txt"
     fi
 elif [ $# -eq 2 ]; then
     if [[ $2 == "local" ]]; then
