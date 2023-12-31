@@ -74,7 +74,7 @@ function _build() { (
 ); }
 
 function _pack() { (
-    local VERSION_CODENAME=$(source /etc/os-release && echo $VERSION_CODENAME)
+    local VERSION_ID=$(source /etc/os-release && echo $VERSION_ID)
     local ARCH=$(dpkg --print-architecture)
 
     local BUILD_ARCH=
@@ -85,7 +85,7 @@ function _pack() { (
         TARGET=$_DISTS/binary-all/${NAME}_$VERSION-${REVISION}_all.deb
     else
         BUILD_ARCH=$ARCH
-        TARGET=$_DISTS/$VERSION_CODENAME/$_COMPONENT/binary-$ARCH/${NAME}_$VERSION-${REVISION}_$ARCH.deb
+        TARGET=$_DISTS/$VERSION_ID/$_COMPONENT/binary-$ARCH/${NAME}_$VERSION-${REVISION}_$ARCH.deb
     fi
 
     # debian/control
