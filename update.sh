@@ -7,19 +7,19 @@ apt-get install -y apt-utils git-filter-repo
 function _update() { (
     set -e
 
-    while read codename; do
-        mkdir -p dists/$codename/main/binary-all
-        apt-ftparchive --arch all packages dists > dists/$codename/main/binary-all/Packages
-        # cat dists/$codename/main/binary-all/Packages | gzip -9 > dists/$codename/main/binary-all/Packages.gz
+    while read version; do
+        mkdir -p dists/$version/main/binary-all
+        apt-ftparchive --arch all packages dists > dists/$version/main/binary-all/Packages
+        # cat dists/$version/main/binary-all/Packages | gzip -9 > dists/$version/main/binary-all/Packages.gz
 
-        mkdir -p dists/$codename/main/binary-amd64
-        apt-ftparchive --arch amd64 packages dists/$codename/main/binary-amd64 > dists/$codename/main/binary-amd64/Packages
-        # cat dists/$codename/main/binary-amd64/Packages | gzip -9 > dists/$codename/main/binary-amd64/Packages.gz
+        mkdir -p dists/$version/main/binary-amd64
+        apt-ftparchive --arch amd64 packages dists/$version/main/binary-amd64 > dists/$version/main/binary-amd64/Packages
+        # cat dists/$version/main/binary-amd64/Packages | gzip -9 > dists/$version/main/binary-amd64/Packages.gz
 
-        apt-ftparchive release -c=dists/$codename/aptftp.conf dists/$codename > dists/$codename/Release
+        apt-ftparchive release -c=dists/$version/aptftp.conf dists/$version > dists/$version/Release
 
-        gpg --clearsign --yes -u zdm@softvisio.net -o dists/$codename/InRelease dists/$codename/Release
-        rm -f dists/$codename/Release
+        gpg --clearsign --yes -u zdm@softvisio.net -o dists/$version/InRelease dists/$version/Release
+        rm -f dists/$version/Release
     done < "versions.txt"
 
     git add .
