@@ -3,7 +3,7 @@
 import Cli from "#core/cli";
 import Build from "#lib/build";
 import Update from "#lib/update";
-import BuildBaseImages from "#lib/build-nase-images";
+import BuildBaseImages from "#lib/build-base-images";
 
 const CLI = {
     "title": `Debian packages repository manager`,
@@ -13,7 +13,7 @@ const CLI = {
             "short": "b",
             "title": `build deb package`,
             "options": {
-                "dost": {
+                "dist": {
                     "description": "ubuntu dist version",
                     "schema": {
                         "type": "array",
@@ -42,7 +42,7 @@ const CLI = {
             "short": "B",
             "title": `build base images`,
             "options": {
-                "dost": {
+                "dist": {
                     "description": "ubuntu dist version",
                     "schema": {
                         "type": "array",
@@ -61,16 +61,16 @@ await Cli.parse( CLI );
 
 var command;
 
-if ( process.cli.command === "build" ) {
+if ( process.cli.command === "/build" ) {
     command = new Build( {
         "packageSpec": process.cli.arguments.package,
         "dists": process.cli.options.dist,
     } );
 }
-else if ( process.cli.command === "update" ) {
+else if ( process.cli.command === "/update" ) {
     command = new Update();
 }
-else if ( process.cli.command === "#lib/build-nase-images" ) {
+else if ( process.cli.command === "/build-nase-images" ) {
     command = new BuildBaseImages( {
         "dists": process.cli.options.dist,
     } );
