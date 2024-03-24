@@ -33,7 +33,10 @@
         "/src"
     ],
     "scripts": {
-        "build": "node bin/build.js"
+        "build": "node bin/deb.js build",
+        "build-base-images": "node bin/deb.js build-base-images",
+        "deb": "node bin/deb.js",
+        "update": "node bin/deb.js update"
     },
     "dependencies": {
         "@softvisio/core": "^7.71.11"
