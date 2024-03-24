@@ -27,6 +27,7 @@ const CLI = {
             "arguments": {
                 "package": {
                     "description": "pacjage spec name",
+                    "required": true,
                     "schema": {
                         "type": "string",
                     },
