@@ -8,6 +8,28 @@ const CLI = {
     "commands": {
         "build": {
             "title": `build deb package`,
+
+            "options": {
+                "dost": {
+                    "description": "ubuntu dist version",
+                    "schema": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                        },
+                        "uniqueItems": true,
+                    },
+                },
+            },
+
+            "arguments": {
+                "package": {
+                    "description": "pacjage spec name",
+                    "schema": {
+                        "type": "string",
+                    },
+                },
+            },
         },
 
         "update": {
