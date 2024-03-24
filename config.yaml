@@ -1,3 +1,5 @@
-supportedVersions:
+repo: softvisio/deb
+
+supportedDists:
   - 22.04
   - 24.04
