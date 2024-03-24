@@ -4,39 +4,39 @@ Hash: SHA512
 Architectures: all amd64
 Codename: 24.04
 Components: main
-Date: Sat, 23 Mar 2024 23:09:46 +0000
+Date: Sun, 24 Mar 2024 01:25:50 +0000
 Label: Softvisio for Debian/Ubuntu repository
 Suite: 24.04
 MD5Sum:
- 4f313f8c4d961264372606efc751c573              155 Release
+ 2743687ca5b7460caccdb6b4a4c193b1              155 Release
  45693081861ee99990fcbe40e24c4ed7             3209 main/binary-all/Packages
- 966ea95eaf0de5fce3e731d6eb7ad5ff             1741 main/binary-amd64/Packages
+ cc49699cf4ed48300091df640a7f483c             1741 main/binary-amd64/Packages
 SHA1:
- 6587db238661ab41b0a47e3bc6d5455bca61a15c              155 Release
+ 4027cd2a247c7e567990ae9663eaaff4d2031e8a              155 Release
  c8cbe1c6ed7203d9c640be9273ed0d5e8e5156b7             3209 main/binary-all/Packages
- 798e06169fe377c9534a36404be666497964a38e             1741 main/binary-amd64/Packages
+ 1a3221c8686feceb5631cdd9841ef85aec5e509f             1741 main/binary-amd64/Packages
 SHA256:
- e11a0131c96df451797a76b1b75e63837eb17c8bc155cfc09cbee92ff4262bc5              155 Release
+ 9d0dec7bd21cc040f63dac2c329c24dc995d3e52389b258ef1a32041289d5ca2              155 Release
  b0a21e33ba7f44e800bae401f3830b1ed381aa90b964ba8f31268eb2c7718e7e             3209 main/binary-all/Packages
- 63727d9d51f1b43b3a07652bf124a5b7d4cd877574f03aac275dbfe5d842de7b             1741 main/binary-amd64/Packages
+ b41c1966e212789c0e4439f80f05dc9e5f5a0ef7362953e97ba1dc30565182de             1741 main/binary-amd64/Packages
 SHA512:
- 333f9c91bf748f980aaccf80bf9086119837ca60939cb32c2544aa3ae8bed2ef63e14604cbbf042e7407a3bbacb01c4dc66aa3eabd54f2f88868a7e5aa58a4d3              155 Release
+ 3a267eb29cd7c141c61315222c66300fc03bcb958ed2e70effec8700aaae754a241d6d0392a8b410466f8573d267e61b8186b74e13043cd27d3b1adf4129ba7f              155 Release
  249cf47e006029ff3b3439841da021880cc938a35ab30219d74d675fd46bb30c1d6e5115cc5c0ae5a3882d9bf3a081c78bb3365c6072c33219fd78988ea611c6             3209 main/binary-all/Packages
- ccf5651df5a36f9a282897d958a6b4982587f8c9d156dee183a159682409bda42b31e57f5a0690bb0d208c2701c8fe9ad8b79082fc3f686c6836c130d045d9e1             1741 main/binary-amd64/Packages
+ 0cc9752409d104755c4870c7104ff5715703cb5b4252a5b3e7f44f24b2412770700ed3cd1e30823b0b2ac6e442ccb0e62a997bfdfb35cba2531bac5e3414a7de             1741 main/binary-amd64/Packages
 -----BEGIN PGP SIGNATURE-----
 
-iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmX/YToSHHpkbUBzb2Z0
-dmlzaW8ubmV0AAoJEHSb4AfXJh4eYakP/0bhgSlAciiBEsX2aNtUNL4ZbGToFDpN
-Rm0EUyX+21VUyi03iHvSEaxSaIApSM1NDCQM395Xh03qiEVs2meHWPr326aSCWqm
-X+4/KzZ93ChWAwfG1ZGwivX8sE9JupKRz9wYNjwA58MSfHznybkOT+NO/6M0h4m+
-EnLNMN332k3g89BEGirZG9fhddXSe7Zhp6PxQfciw7d4MEGWiqwocjNpcjCtcz93
-7cMBJyI474bz1g8F0/7/U7+zmPPXESM8SUW2yhmrQ4QI0HnU+U7MVhZjOYIJuU6H
-lQfEa6W+vsRWT9wKBZoXOKHKeSV3NYVNCA9+X8TinK5wWGJDUAJLHf1szBV5UTNu
-2j3lSWyFPRAMgjmCDBUbgrPX7TyuYCgeN6Mf6JuYMhE0DYdQXW7wKCQe28zfLRIp
-+ByurCyrsnZXUDYCqOGxwMaO97HAWhTbvY9W8KQUYAazY+T8g5SPrfVdWz307oWu
-SPjzfCs8VVP5s7/in8kNCKe5gxwG0opRz5zLha/c1sNqAP+YTkzxBrpFppEb+h0o
-KA1zeO0OPqqrFwopVxu9Kirba7R/lY5V7f2cQWXDwwzr5F53p6mVhXhX8XZ1bbMe
-+3wcgVgkin/dSHm9LcVIo8iy0iNPvsfVGJlo/UTK+H8c3Un8XQJeAd3Ly5y152y5
-SsMvvEdhsF1Y
-=mbkT
+iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmX/gR4SHHpkbUBzb2Z0
+dmlzaW8ubmV0AAoJEHSb4AfXJh4egAoP/ilWzqlNxrB/RmcL/bo2lvSgRUZ2eeXC
+G7eUeVUQ9cEWZxVb/Qro324AEfJa/e0ywseZNVgJckhiKnTrcC7GNScSo67fdQPv
+qPUZMb/qD5GhbQWuZtGQT1q+dWdRKu4TsaU+03vGdjGnfLWN2MbG2dyHfLtVEpDX
++9Nqvc7ei8GjuvY92J7q0owP/4LpLQpmGePV7yn6aqeMePQoHAb4JX5d3vJpCtOc
+eGhCmKu3dXRC8ADI0UMGf8497zfRZWRo8R1qGNOFXlEbODpz2dvAlh0vD7Dxkr+x
+rVr2TVl9SLiMv+1UD8xmgt9Hr3XWq2qS50Y9C6vSPQEeT6VEWqhAgDyPYNFbzBfj
+gLiQRxVQtH4gbjrZR9j6f9gzcC2EzzLA7afwFWr0r4ooO6Tsg8DFgeu7+6m5KI+O
+J2kaduQMzM6nABiq8sKNLS1uu4Ba8PUyERLskNGOKG7giHbYlsFMXVh7u/7quX52
+q8ah9nl/kSTVffRivwjRLcebOpg8LnliE3byWCx7/ho+2jIunakPzlGunlqnPTCP
+Ed3q3XpqV4Iy1p1uzZHSJnIhmlK9+S/HXPlR5vmJvgwecPZtiMsI1VuhFQx2Lfvf
+jCAcD4o9J6X5jnm6nBMWM6TD3gKjKR2FufXCh2cJWtuMtm0tC2+XC1u2svRnYKFT
+HsiRkDP3JSM7
+=gcdM
 -----END PGP SIGNATURE-----

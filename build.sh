@@ -113,9 +113,9 @@ if [ $# -eq 1 ]; then
     if [[ $ARCHITECTURE == "all" ]]; then
         _build_local
     else
-        while read version; do
+        for version in $(cat versions.txt); do
             _build_docker "$1" "$version"
-        done < "versions.txt"
+        done
     fi
 elif [ $# -eq 2 ]; then
     if [[ $2 == "local" ]]; then
