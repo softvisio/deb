@@ -70,7 +70,7 @@ if ( process.cli.command === "/build" ) {
 else if ( process.cli.command === "/update" ) {
     command = new Update();
 }
-else if ( process.cli.command === "/build-nase-images" ) {
+else if ( process.cli.command === "/build-base-images" ) {
     command = new BuildBaseImages( {
         "dists": process.cli.options.dist,
     } );
