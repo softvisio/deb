@@ -7,7 +7,7 @@ apt-get install -y apt-utils git-filter-repo
 function _update() { (
     set -e
 
-    while read version; do
+    for version in $(cat versions.txt); do
         mkdir -p dists/$version/main/binary-all
         apt-ftparchive --arch all packages dists > dists/$version/main/binary-all/Packages
         # cat dists/$version/main/binary-all/Packages | gzip -9 > dists/$version/main/binary-all/Packages.gz
@@ -20,7 +20,7 @@ function _update() { (
 
         gpg --clearsign --yes -u zdm@softvisio.net -o dists/$version/InRelease dists/$version/Release
         rm -f dists/$version/Release
-    done < "versions.txt"
+    done
 
     git add .
     git ci -m"chore: dists update" -a

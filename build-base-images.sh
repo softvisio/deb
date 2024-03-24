@@ -16,10 +16,10 @@ function _build_base_image() {
     docker push ghcr.io/softvisio/deb:$1
 }
 
-while read version; do
+for version in $(cat versions.txt); do
     pushd $SCRIPT_DIR/base-images
 
     _build_base_image $version
 
     popd
-done < "versions.txt"
+done
