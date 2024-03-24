@@ -39,3 +39,5 @@ const CLI = {
 };
 
 await Cli.parse( CLI );
+
+console.log( process.cli );
