@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 import Cli from "#core/cli";
+import Build from "#lib/build";
+import Update from "#lib/update";
 
 const CLI = {
     "title": `Debian packages repository manager`,
@@ -40,4 +42,16 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-console.log( process.cli );
+var command;
+
+if ( process.cli.command === "build" ) {
+    command = new Build( {
+        "packageSpec": process.cli.arguments.package,
+        "dists": process.cli.options.dist,
+    } );
+}
+else if ( process.cli.command === "update" ) {
+    command = new Update();
+}
+
+await command.run();
