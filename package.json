@@ -17,5 +17,25 @@
         "url": "git+https://github.com/softvisio/deb.git"
     },
     "license": "Proprietary Software",
-    "author": "zdm <zdm@softvisio.net>"
+    "author": "zdm <zdm@softvisio.net>",
+    "type": "module",
+    "imports": {
+        "#core/*": "@softvisio/core/*",
+        "#lib/*": "./lib/*.js"
+    },
+    "exports": {
+        "./*": "./lib/*.js"
+    },
+    "files": [
+        "/bin",
+        "/lib",
+        "/resources",
+        "/src"
+    ],
+    "scripts": {
+        "build": "node bin/build.js"
+    },
+    "dependencies": {
+        "@softvisio/core": "^7.71.11"
+    }
 }
