@@ -79,4 +79,8 @@ else if ( process.cli.command === "/build-base-images" ) {
 
 const res = await command.run();
 
-if ( !res.ok ) process.exit( 1 );
+if ( !res.ok ) {
+    console.log( "Operation failed:", res + "" );
+
+    process.exit( 1 );
+}
