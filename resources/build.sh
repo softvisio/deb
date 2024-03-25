@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 
-_DISTS=$SCRIPT_DIR/dists
+_DISTS=$SCRIPT_DIR/../dists
 _COMPONENT=main
 
 # init
