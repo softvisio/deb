@@ -26,7 +26,7 @@ const CLI = {
             },
             "arguments": {
                 "package": {
-                    "description": "pacjage spec name",
+                    "description": `Pacjage to build. Use "all" to build all packages.`,
                     "required": true,
                     "schema": {
                         "type": "string",
