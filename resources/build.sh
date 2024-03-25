@@ -40,11 +40,11 @@ function _build_local() {
     if [[ $? == 0 ]]; then
         _pack
 
-        echo --- Package built successfully ---
+        echo -e "\nPackage built successfully"
     else
         error=1
 
-        echo --- Package build failed ---
+        echo -e "\nPackage build failed"
     fi
 
     cd $cwd
