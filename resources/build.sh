@@ -55,18 +55,6 @@ function _build_local() {
     if [[ error == 1 ]]; then exit 1; fi
 }
 
-function _build_docker() { (
-    docker run \
-        --rm -i --shm-size=1g \
-        -v $SCRIPT_DIR:/var/local \
-        --workdir /var/local \
-        --entrypoint /var/local/build.sh \
-        "ghcr.io/softvisio/deb:$2" \
-        "$1" local
-
-    if [[ $? != 0 ]]; then exit 1; fi
-); }
-
 function _build() { (
     set -e
 
@@ -109,23 +97,4 @@ EOF
 
 ); }
 
-if [ $# -eq 1 ]; then
-    if [[ $ARCHITECTURE == "all" ]]; then
-        _build_local
-    else
-        for version in $(cat versions.txt); do
-            _build_docker "$1" "$version"
-        done
-    fi
-elif [ $# -eq 2 ]; then
-    if [[ $2 == "local" ]]; then
-        _build_local
-    else
-        _build_docker "$1" "$2"
-    fi
-else
-
-    echo Invalid number of arguments
-
-    exit 1
-fi
+_build_local
