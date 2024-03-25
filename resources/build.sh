@@ -26,7 +26,7 @@ MAINTAINER="zdm <zdm@softvisio.net>"
 # apt-get update
 
 # load spec
-. $1
+. resources/packages/$1
 
 function _build_local() {
     local cwd=$PWD
