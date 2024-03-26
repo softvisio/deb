@@ -1,7 +1,5 @@
 label: Softvisio repository
 
-repo: softvisio/deb
-
 codenames:
   - 22.04
   - 24.04
