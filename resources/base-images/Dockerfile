@@ -1,6 +1,6 @@
-FROM ubuntu:22.04
+ARG FROM
 
-LABEL maintainer="zdm"
+FROM ${FROM}
 
 USER root
 
