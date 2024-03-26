@@ -13,8 +13,8 @@ const CLI = {
             "short": "b",
             "title": `build deb package`,
             "options": {
-                "dist": {
-                    "description": "ubuntu dist version",
+                "codename": {
+                    "description": "ubuntu codename",
                     "schema": {
                         "type": "array",
                         "items": {
@@ -43,8 +43,8 @@ const CLI = {
             "short": "B",
             "title": `build base images`,
             "options": {
-                "dist": {
-                    "description": "ubuntu dist version",
+                "codename": {
+                    "description": "ubuntu codename",
                     "schema": {
                         "type": "array",
                         "items": {
@@ -65,7 +65,7 @@ var command;
 if ( process.cli.command === "/build" ) {
     command = new Build( {
         "packageSpec": process.cli.arguments.package,
-        "dists": process.cli.options.dist,
+        "codenames": process.cli.options.codename,
     } );
 }
 else if ( process.cli.command === "/update" ) {
@@ -73,7 +73,7 @@ else if ( process.cli.command === "/update" ) {
 }
 else if ( process.cli.command === "/build-base-images" ) {
     command = new BuildBaseImages( {
-        "dists": process.cli.options.dist,
+        "codename": process.cli.options.codename,
     } );
 }
 
