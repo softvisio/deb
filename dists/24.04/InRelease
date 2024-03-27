@@ -1,10 +1,10 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Architectures: all amd64
+Architectures: all amd6
 Codename: 24.04
 Components: main
-Date: Tue, 26 Mar 2024 21:35:05 +0000
+Date: Wed, 27 Mar 2024 12:34:52 +0000
 Label: Softvisio repository
 Suite: 24.04
 MD5Sum:
@@ -21,18 +21,18 @@ SHA512:
  0cc9752409d104755c4870c7104ff5715703cb5b4252a5b3e7f44f24b2412770700ed3cd1e30823b0b2ac6e442ccb0e62a997bfdfb35cba2531bac5e3414a7de             1741 main/binary-amd64/Packages
 -----BEGIN PGP SIGNATURE-----
 
-iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmYDP4kSHHpkbUBzb2Z0
-dmlzaW8ubmV0AAoJEHSb4AfXJh4eAokP/08/xkPFv5qJi3l/Agqfj9ItM/ef4uOj
-a3nPQbv/0/+CyEfKtuF7zBfCGWqrRrMO+yNroxKCwLZjhldnKM0XrM/Zb3+/JzwW
-Kwxi/1U5ss3YhTMNrnfPNS0KjQowt9UxorJY92uaIUdXs3IFOn/GEyyongvOGGgF
-FI5Bx3IsWZPGud2EjfbbqvPwJIPlhrsyj2j2gP33G0+dKBfXtErYAtcKpeSw59rD
-e292e7+WqraiUs2vLfJ1u0YR+x7G7wQtyb5jg/MPpQdCo0vn+bwUkze8zf0NSwzU
-tgM5UO/UZPvB54H0kW0dX2WI2SNrTiYqGDhiQEi/xziRgfpse9NfQiUP7Zkk5OEi
-uHVIo/uNR7uHrMzqLco251i5b0quxzXMzUIrbrxRxN23zZNJF5JAW6Agwu1rRPq0
-cE+x4iwSi6aCi82rNrlAY+VUO1exjsBNQwZ01h1PS4SrwgpKKrBBUien/ryL70rq
-blmXNeyIYCmshcyHCqiCDLi9AiltygxgBY9mq72VwWx1WvQ7RvFgHdjDeHapprHH
-FRnjoQABAMF3nS0/IxC6TchnbZffuCeOn1LbIuXa8wuvOxYG7I7D0rdAcyC33MXF
-9EurBaR8kB3zkJ4kE41tTwSUVj4vBc1x0OrUNBj4liEsNJeWfFcMt+gEWPKBOerM
-YX1Lsf6kbJ7J
-=sasJ
+iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmYEEmwSHHpkbUBzb2Z0
+dmlzaW8ubmV0AAoJEHSb4AfXJh4ej+EP/1NxTeeNhNGuPpgIpNjkrnpZ6X4wlEAz
+5XWs99bdOhvRoRd30/5q790iA/TaSg7RQ7ZRjYEgqIFthjzlpoP9sBbx2/GOMeI1
+m1QiDewBWi3S6sjpJkpIvO3n19y7aR5IOBNZmmta48N/3mPQWX6Mrj9tCsK+6mwZ
+ezx6c2jxNKcCgVpVbCgoZkqiDgqZkYYgKFPm6MT3zlEld6zMieyxTfi2M2msleXs
+G+MUsbF5PYXjdK1cblwSHcRNOeVnMXTLwg9SdqrduC0itf6QdvHOEkDBWT08RAmE
+Nsr2mmBg5E5r44zQ82d5/lJOURrDDwTboHZygbLSD/bVljHj4GJHvyRnB/dl3gz9
+O9VyzFCfA75jaRPVjKAooTmCw27CO7HQ5ObiKAeLla9Eo+eIa3x9pscxlZPRWn7Z
+pFd2SotXF68RG0j4L/+ZgAbufO/9Zzqtqnu7LqcHHcBSG4DQWWkMuj4vL4AI++7E
+nE1Rbst3POtOmHAehHNYVwfRvj+bjR0y287hE8FQ4ZdIpsB4uUMETeJwcarRB4Nn
+jALy3uXTkhaiIBKH55japZZOyEf7VAPN0IXjuRphnPjhfIZMo8+neldslNWsTFn+
+4ze/48llNtUn9TUQ8ItTzQKBwyIBLrK+iPlE5ax3UPrLk6CF5pf3HOnPinXusW/g
+G9dPawPGFNhu
+=H6uz
 -----END PGP SIGNATURE-----

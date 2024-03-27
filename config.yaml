@@ -3,7 +3,3 @@ label: Softvisio repository
 codenames:
   - 22.04
   - 24.04
-
-architectures:
-  - all
-  - amd64
