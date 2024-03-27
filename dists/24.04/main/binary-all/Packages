@@ -5,11 +5,11 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 308
 Depends:
 Filename: dists/binary-all/n_9.2.1-8_all.deb
-Size: 32422
-MD5sum: 895dbc75be1d0c9022207fce0727623b
-SHA1: 23a07ac606d8b7b4024823d65245eda84f0fe4d3
-SHA256: 753f15839b3177d44060bead42aadc6128f6b1cbdaff8dafa53350b83e225ae2
-SHA512: c1903fc56cbe37f246e849f18c86af3da72c325ec33fffd423c9bb80bace68e53ff736d1b66b84c367a2458b4c3ee735b6daa3b2f8672f01565a295c67627fac
+Size: 32424
+MD5sum: 2ae8a289d6d2beddca176383fdd07055
+SHA1: a6af56c5e45af4e1e0b00dc78861a51c5723c1d6
+SHA256: 730700d65a63abb3d126c801ddbfaedbd6cc6b89e41122899ba13c0a1505b912
+SHA512: 5a63d9236388b2eac4040ede2e89b83f97393bba4accd121a433ec13021fd21030c4612edc25cb4d674874bfdca4af29f8622d8e590c07156c7e19c8f45d6e12
 Description: Node version management
 
 Package: nvim
