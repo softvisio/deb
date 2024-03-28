@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=repo-docker
-EPOCH=
+EPOCH=0
 VERSION=1.0.0
-REVISION=
+REVISION=0
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Official latest Docker-CE repository"

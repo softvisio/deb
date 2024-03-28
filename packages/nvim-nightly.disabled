@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=nvim
-EPOCH=
+EPOCH=0
 VERSION=$(curl --silent https://api.github.com/repos/neovim/neovim/releases/tags/nightly | perl -lne 'm[NVIM\s+v([\d.]+)-dev\+(\d+)]sm ? print $1 . "." . $2 : next')
-REVISION=
+REVISION=0
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Neovim nightly build"

@@ -4,9 +4,9 @@
 POSTGRESQL_VERSION=16
 
 NAME=postgresql-$POSTGRESQL_VERSION-softvisio-admin
-EPOCH=
+EPOCH=0
 VERSION=$(git ls-remote --tags https://github.com/softvisio/postgresql-softvisio-admin.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=
+REVISION=0
 ARCHITECTURE=source
 DESCRIPTION="PostgreSQL admin extension"
 

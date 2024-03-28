@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=redis-latest
-EPOCH=
+EPOCH=0
 VERSION=$(git ls-remote --tags https://github.com/antirez/redis.git | perl -lne 'm[refs/tags/([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=
+REVISION=0
 ARCHITECTURE=source
 DESCRIPTION="A persistent key-value database"
 OPTFLAGS="-O2 -g" # rpm --eval "%{optflags}"

@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=repo-google-cloud
-EPOCH=
+EPOCH=0
 VERSION=1.0.0
-REVISION=
+REVISION=0
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Official latest Google Cloud repository"
