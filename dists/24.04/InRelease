@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all amd6
+Codename: 24.04
+Components: main
+Date: Thu, 28 Mar 2024 13:23:05 +0000
+Label: Softvisio repository
+Suite: 24.04
+MD5Sum:
+ 075b1135898c7ef70504750fdf857984             3173 main/binary-all/Packages
+ 3677b23343e3fe014ea8da3a9f7bd876             1723 main/binary-amd64/Packages
+SHA1:
+ 56d6387781b192149bfdb1717b3dc1c5453c77bd             3173 main/binary-all/Packages
+ 2abab2f991163a04cc46667be2ee11b4a562880b             1723 main/binary-amd64/Packages
+SHA256:
+ fc2be885143fcd11da54eb6078ec2e565f6742bc87d51cb15060a993cf19b14b             3173 main/binary-all/Packages
+ 656397463669877efd6c575290b5544fbb8b69c195f621a2a6bcbfcdf719dc65             1723 main/binary-amd64/Packages
+SHA512:
+ e6365e1a7826040e853e8f368742e94318f251d6512057672e76f78397899d7b309ec776601c1eeb5293fa52b2db2ef83e0b3134b5623b517f0bc2600cc8315f             3173 main/binary-all/Packages
+ 00078571b05fe91f223f0dc6a25ef2acb1f9c8a36a19207ed45c27d441837f125049f07d5e487b0769ede5d4a21e7b020d53199153268b95111ff8f2ce612b7e             1723 main/binary-amd64/Packages
+-----BEGIN PGP SIGNATURE-----
+
+iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmYFbzkSHHpkbUBzb2Z0
+dmlzaW8ubmV0AAoJEHSb4AfXJh4edwUP/RXO1g77iWar4zQlb6OKTHaDqxCshU2D
+G+03q5hIQ+e9z1OZRSXw5g/LsZQ8B8LinYgfv0bd3TRuQ0TMPS23wBAzml8dqeJC
+Yvz7hluD/8w9zZ4Ar5h9qH71uEbGoFZe+GQYn7LphZSwkIwQVcHtnXSsMOqOcjfP
+QT0vg/8RLcNRQQrDHhotjTW/Khjr+UJqzcw/Pv5HakHvtRGcMV7Pj4jlh8AfgMjG
+qKanRgLZ+1uyAKOyXjS9tBnrxsKA1lPQVskjFH66H33DaVpu92rY/DoVLH5z3A1I
+vwXmdXj8kIf2+e37CgwGbeBkMUUhgdd/oP+GG+rQKnXeKhSQWm02VwLd3Qeb1kdj
+k+xH5L3o0TGEwPR0Cb5A20jHIgkQBVkHDCef7etrDYsl1C9KYLZuKsVU3eD53kJe
+DFHIBfUBFqrc7tpQYxG338CipQrdxtZPPGCo5ZfJYXSUnqyq7h8sXp+eYn7TvtGY
+kKMNs450i0ak+Z7djVHXZcN3MQzYFEskR+L9a9ZFqRFbUbneNGrU9N8bhTrgnvcg
+EYWnajj10txCtIy4eXuzoNjcxvGOdNOKM1hfQ2kX4DG526YX5sJkvCdlzkxA2Yce
+/rTdD7MJwkXzz3GGndWx1xwFqUSJvZiW9WfsEXDU6y4tr71si05I23xfRYnrkB9c
+m9V01r3YvSdk
+=GjGE
+-----END PGP SIGNATURE-----
