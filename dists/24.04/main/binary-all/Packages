@@ -1,15 +1,15 @@
 Package: n
 Architecture: all
-Version: 1:9.2.1-1
+Version: 9.2.1
 Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 308
 Depends:
-Filename: dists/binary-all/n_1-9.2.1-1_all.deb
-Size: 32420
-MD5sum: f1f62b332eceea593d38d2033c8abad3
-SHA1: 505160964fed01b6953ae3a5131ae7987c3206d9
-SHA256: e36cb450a5a89fe2849d66212ec49312ded450dd84741c4dc055f83a4e61d298
-SHA512: 753b6910220506efdc1ef5e0618d4e70e979e3a6ca70a0b4983d08cf911a392e4c1e0ac8736b88461cf9a58b52b8c28cb63ea715e8f852a35b47d849b7372035
+Filename: dists/binary-all/n_9.2.1_all.deb
+Size: 32416
+MD5sum: 4f9281ac377f5078deaf01cd03ed3bf0
+SHA1: 7e7b36c4c3a6d886044fd0b3c298746ca8c67809
+SHA256: aa947ffbcb01bf8c10d706ad9185f0212c7c76ce6702937f71d15a8ec8b873c5
+SHA512: cfc8ace9282203710c4a3006799ca86f665f35041232908468cdd57cff921b00a0c057f47efa8e6307f35e3cd5b60ce1c3ba506435d80df91e0d294dbccd53c6
 Description: Node version management
 
 Package: repo-docker
