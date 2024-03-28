@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=n
-EPOCH=1
+EPOCH=
 VERSION=$(git ls-remote --tags https://github.com/tj/n.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=8
+REVISION=
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Node version management"
