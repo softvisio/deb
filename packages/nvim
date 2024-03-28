@@ -2,10 +2,9 @@
 # vim: ft=sh
 
 NAME=nvim
-EPOCH=1
-
+EPOCH=
 VERSION=$(git ls-remote --tags https://github.com/neovim/neovim.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=1
+REVISION=
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Neovim stable build"

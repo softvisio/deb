@@ -2,9 +2,9 @@
 # vim: ft=sh
 
 NAME=repo-postgresql
-EPOCH=1
+EPOCH=
 VERSION=1.0.0
-REVISION=1
+REVISION=
 ARCHITECTURE=all
 DEPENDS=
 DESCRIPTION="Official latest PostgreSQL repository"

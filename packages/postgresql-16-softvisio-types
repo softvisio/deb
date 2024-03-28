@@ -4,9 +4,9 @@
 POSTGRESQL_VERSION=16
 
 NAME=postgresql-$POSTGRESQL_VERSION-softvisio-types
-EPOCH=1
+EPOCH=
 VERSION=$(git ls-remote --tags https://github.com/softvisio/postgresql-softvisio-types.git | perl -lne 'm[refs/tags/v([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
-REVISION=1
+REVISION=
 ARCHITECTURE=source
 DESCRIPTION="PostgreSQL types extension"
 
