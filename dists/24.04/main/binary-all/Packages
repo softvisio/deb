@@ -1,30 +1,16 @@
 Package: n
 Architecture: all
-Version: 1:9.2.1-8
+Version: 1:9.2.1
 Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 308
 Depends:
-Filename: dists/binary-all/n_9.2.1-8_all.deb
-Size: 32426
-MD5sum: 22a138bd09342990213dc20be9423693
-SHA1: dc895837220662da43411cc9637753ec7faeeb3c
-SHA256: 89946e21d2b146e9f2394e4d93beee936d06f97cf1b7b3aca8c8e0401aef025b
-SHA512: 835966ae6abd722c59007c8ec8410f9defeb79e7d3498ea670094255dc89966e37e5e5cf036c2f409df6da931199ed2d3f012668c2b719ab87fb0f66648b737b
+Filename: dists/binary-all/n_1-9.2.1_all.deb
+Size: 32420
+MD5sum: a01454dc329b6c9f688a1132d246d6ed
+SHA1: c75fcd7531b2baead94ca13bafb269a2f442c0e9
+SHA256: c8136e6f0a34d2fdd653306a0f2d69ae0f70a9002a16fa7fdaa4ff99e91bcdd9
+SHA512: b12eb7432c84b92e61e091f4a07e3d7c72604936a23edd91ffe9b0c8b1b5f998c05972d46db08b2b73b138d1648a986704fa5df80bbf199be59889ed4c0ff8b2
 Description: Node version management
-
-Package: nvim
-Architecture: all
-Version: 1:0.9.5-1
-Maintainer: zdm <zdm@softvisio.net>
-Installed-Size: 38900
-Depends:
-Filename: dists/binary-all/nvim_0.9.5-1_all.deb
-Size: 8567008
-MD5sum: 8cb1b60c17b85c9c66596671b6cb5946
-SHA1: 472c7919271026792faaafacedb880997ddc59e6
-SHA256: b5eae40b5c41cab49da402390ccd8d5bb2277e47084bcbf6910b8d9c4410071c
-SHA512: eec725c737f92703917d8fe2118c41058688dbd1d25cb307921753f6214622f5257ce8a039ff9ddcc6262345ce6114d72df07545646bdbbb8fb555905cd96d8f
-Description: Neovim stable build
 
 Package: repo-docker
 Architecture: all
