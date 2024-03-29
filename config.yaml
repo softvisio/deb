@@ -1,5 +1,7 @@
 label: Softvisio repository
 
+maintainer: zdm <zdm@softvisio.net>
+
 codenames:
   - 22.04
   - 24.04
