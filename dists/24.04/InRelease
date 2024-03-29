@@ -1,34 +1,38 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Architectures: all
+Architectures: all amd64
 Codename: 24.04
 Components: main
-Date: Fri, 29 Mar 2024 19:42:51 +0000
+Date: Fri, 29 Mar 2024 19:47:49 +0000
 Label: Softvisio repository
 Suite: 24.04
 MD5Sum:
- d41d8cd98f00b204e9800998ecf8427e                0 main/binary-all/Packages
+ 73ba9b2ae3083b0afaa678c09b944cbd             3138 main/binary-all/Packages
+ 09b27bd6358ea8982d3edc3c7fae3932             1705 main/binary-amd64/Packages
 SHA1:
- da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-all/Packages
+ 2b48e9d28ab892fd5bd1d417d149353ce14d4dde             3138 main/binary-all/Packages
+ a97aad86199fbcbebb2de11bd7e07aba80efa254             1705 main/binary-amd64/Packages
 SHA256:
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-all/Packages
+ a2e289510b7ff17c29859c8a4a334642d76921f9f31a44da8a730e4377cb241b             3138 main/binary-all/Packages
+ ced392ac6d27ccd7d33f9685f898623045db535f0a1e6c7a335d84858cb0abe1             1705 main/binary-amd64/Packages
 SHA512:
- cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-all/Packages
+ 738dd5bd3c553b3e776ca5dab02e510e9607d4a04eca266edf948f9b387a90d992ccb521b0af8b7f49da7dfb436dc257c0e7528d2bcc0700050f078ea4fee9f2             3138 main/binary-all/Packages
+ 060cd0e47ef55de318ab450f4dc5e68cad3d3030627a7de4c642fe8c57f9a2836e3c6181ef8350f20e4d61b9b5613185cf6b385771cdd62fa1840702c5822320             1705 main/binary-amd64/Packages
 -----BEGIN PGP SIGNATURE-----
 
-iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmYHGbsSHHpkbUBzb2Z0
-dmlzaW8ubmV0AAoJEHSb4AfXJh4ejugP+gNiKDEA6xwJacP/O922PSmkx+K69Ppx
-pB7N9fznBF6NFxH0gjlrxFvLjBMN3SRzeB2tjdq8Pki5Lo0GDxYqtqS11lqfxOxz
-UsuIho7TseA4IQOnuygm3W44H8XmLJmJv8+eFEBssMBdbyeN87w2ySUaPgwdgNPi
-haEVuD5IcMoZmlETvPG3N4d+vCLepMRLXtBnRrSZUNcOV5BN/mhsTFIY9vUaRdG5
-U84BK4lsluCegNGlmDx1j/Nf92m88cAfcjy/CjWi0GpIIyWqnt0H/OvfhnkMSpSG
-ejspUxkFTvUQjkM4H9Z1aFMlcWKrhdHTbaCIg/k5XrbKThuUCJConyf51+WOvk0B
-VJsk0gQW2KMK5tnNbUyo8XlIljdjtrDl/fUAdMP4w1DjvRLzY8ScMWd62j/U2p/U
-UXY0w97ciKuRT+cYcXOMTKpB3N+rya/vrkqT6SNCDksoqi/LMiRQvOxOcHXn0tg5
-I95I0dEtHtqAfttgDnvWd7R8jyXOHI5/BFA6M2NbGn+ah3G1dkETYYUe93PL3U5S
-3G0jupVmdLtDeK1McMTMWAn5bsnOnSRIOVarPqOe+HZyO/KtHDfkk2Eq+leso+9T
-r0Drm7yYrVWFVN0rLzNyMmrbIbLKCauEIWKN/49DEaOCX8rN2QMucmvab4ig0u1i
-4tKsdcv4mLbY
-=KVnT
+iQJGBAEBCgAwFiEEVYckHyF7wlsmUX19dJvgB9cmHh4FAmYHGuUSHHpkbUBzb2Z0
+dmlzaW8ubmV0AAoJEHSb4AfXJh4eeY0P/0Guqx+fZzzJYwECz96diuD7+mmwji64
+xpGZ7HUlOBmTq+xAUpppMT95Py432uIpnXTT3u3ov6CKxZXTVz2ksmhKRo6csfQK
+lL6aT5rsvy5/N1P78tZ/AszNtqU3MS+pGhW6vjjCKaiCPmGIT3gMemNeO02E4pmG
+XJ3Itx6g/LD9MAm8SZvAY+Ayu//mFzlBMT6IPVVQqdJTkzSdVviMrMwAdOAebdbu
+z4oyUTQY8KNVP7SFzT4yv1Iec2Uen0+3xQ+da2Oj8Ul83TrrMhR9f0jDSNJd1+om
+xMZHMlp5DAaO6BDit9UUYccwCRz8JSRXkJcdzZ3NtjHfKyyMen81CNEkei25oOAf
+R/FmBdohTWzOqWMRaEhzrtV0rh8+4HgrMmINNokkQbTLZSKhpPb8s7W60pcrv06K
+FCUHIfA6LqBpEJeGGUKAhsUm3NsngN74qC40Seh+rblFjmGMc49Codx3gBSolVtL
+F8H9xrh9DWZBPSW2tEmoymhUSEZxHglh8fDx2GOpvdgRQ20qYSXzrU4BEtODU82P
+H2PuI629R652xvapypSUZcSOCH431BKkHoBZyinxDbzFxFVKpbkeDyU2PeU3fekm
+G2y/5UkgBhUDl19/DGsVJp1xoTcIikN7l9sH4v/vmj0gji4x/b75JTzg1Gj0w0Tk
+alOAvtoeSFXI
+=Bl4/
 -----END PGP SIGNATURE-----
