@@ -5,11 +5,11 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 308
 Depends:
 Filename: dists/binary-all/n_9.2.1_all.deb
-Size: 32414
-MD5sum: cd53313bd04af9ef43f1ff23c312610c
-SHA1: a8d6011975fab114f5ff9a07e6c1b604dad75afb
-SHA256: 1422a2bac641c485cc513b9cfdedfc587e61d1f043618704399fcca124142e72
-SHA512: 26fdc98c95e811363332d604a70f731471a5cfae3b28d8cee61f63f81adc935c128b00bd64510f7322a33db259ce61618da10544d22b2cb5bdb9db1529fbcee0
+Size: 35824
+MD5sum: 0d9ec387f945843db17688b60d252695
+SHA1: 48955c0e7a9e765c4eb67bd6ae6e8148d2006b86
+SHA256: 506a48392ab9ccd8d0463f84823d76b63e1ce4e419c95bada5453ce0a0037783
+SHA512: 15ef278302da223b8f802a8a7241b7bb9a0e0fa8568c0cd4507d8d0f15f4a7ce2de862b49252c81b778ac99de69c0c182a881140d20f228b5fbd0adbc2548629
 Description: Node version management
 
 Package: nvim
@@ -19,11 +19,11 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 38900
 Depends:
 Filename: dists/binary-all/nvim_0.9.5_all.deb
-Size: 8561232
-MD5sum: 7e60eebc704adb87af5aaf36a25390c5
-SHA1: 59cf23b3c0375ba2fb1f6971e85ae8cc052f143e
-SHA256: 9d5abaa506f0808d3dbf8dcb42db84c94efb81cbf48c12ab38c80a73391d2ee9
-SHA512: 496d91138a641549e76b2d2c3c53afcd49099e948a464d466543c0294601ba8de9c3ed5f3b090eff9090e95c2b32bf366827f6ea7baa817ca4ad20125347efc4
+Size: 10936114
+MD5sum: 19f026ce77da97c68839862ee3e2c71c
+SHA1: f037c0207850369ee12315e91928f2a53f7fc95b
+SHA256: 9c461bf29e8928e8709bd1f9b0d667b8452013d77ed1b2160aa253d4342d3336
+SHA512: 3b4b11328f28663ef6a74377dec5cd95ebc2e24c778c26a2c8366f04468dcaa30ee71a6bef9dc3213dc69d2da05ea6022a95493e93749639e2c3625796d35b7c
 Description: Neovim stable build
 
 Package: repo-docker
@@ -33,11 +33,11 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 44
 Depends:
 Filename: dists/binary-all/repo-docker_1.0.0_all.deb
-Size: 3728
-MD5sum: 184ff439b87a85adc66396592cd80a47
-SHA1: d013c2ec8d74268b49548ad4f9c63363d43ba527
-SHA256: f9bb34a548cf905d7f7f883ca21bb1fc768d36f147c81b02ce735d33bee9fca4
-SHA512: 8e6443866a60e9c865e8483c0fd53d27225205c9097ec85b42f0800768999116cbdd4061d69fb2fecd910ec616e434e6783ef90473c98f8788c496fc1b1c0941
+Size: 3864
+MD5sum: 7e31457feec517500c24d81f198b3ebb
+SHA1: 48ae24a20b922856326644faedf1e3c943effc76
+SHA256: 7e46ed700122b65043e7015776a76138baf33777f5a99ccdd1b2b787bd25bb1e
+SHA512: 2f8fc79b77efec7fd75f94df277f74558be9b5740f9efec80754c242a2069f3af91f20f5397d56fa0f790cec7e96ff149a86b8a80563b5beb46c5d1bd9878a9c
 Description: Official latest Docker-CE repository
 
 Package: repo-google-chrome
@@ -47,11 +47,11 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 52
 Depends:
 Filename: dists/binary-all/repo-google-chrome_1.0.0_all.deb
-Size: 12662
-MD5sum: 8fb74e87566af7b637b9c47173894672
-SHA1: c6526a185f8d5d493e4b5eaf6265737b5d779a12
-SHA256: 9d76deac7d953bac64aa1eff2037c8497fee52fd37bc7ad820267700ee7003e3
-SHA512: 41fc29ddbc058d6cf790c085dc2b1c1c03ab04f994df8f6f81ee3fefd05e60196a84bdc3b25f5cde8c40862ea3da531e53e2acba24a291d6fd71477fc88bd819
+Size: 12852
+MD5sum: 27554bcc2664928ff399e0e628d9241b
+SHA1: b38ddcb81d676f9f4245ce211ffc952dd7b4f38f
+SHA256: 29e7afbccc3815641904beca8abc6e1f3ecbd895e5b878e9ea06887e5363a6b3
+SHA512: afd69a4f0e69cf905c35add33a877e471a0f006086c91ae0dc934ee72ee11cfb1cde87caed7f9db512a4595f2666ab7ea9f69ea787f0dd0dc14ddd174b0a92ee
 Description: Official latest Google Chrome repository
 
 Package: repo-google-cloud
@@ -61,11 +61,11 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 40
 Depends:
 Filename: dists/binary-all/repo-google-cloud_1.0.0_all.deb
-Size: 2658
-MD5sum: 8ae8672a563aecd60be1ea56f384f3fb
-SHA1: 8e89b0b43d96141fbc8cede8434bebc838efabbd
-SHA256: e236a3820f3d5023431003e48fd17782b5adc2e5fd0d112fcdc89dc8b97d43b8
-SHA512: c9f98460fbd65a43b18b2d08139178285ff72818dd89684263898954f82befc10d89d9013144988840a163dd093bfac3e7f6b6d32e990fa9be513ad60700cf49
+Size: 2792
+MD5sum: 45bd417781b7a88ecc7ba59c72fc64b2
+SHA1: 99685a9c1e4b2dc2248497ff55a34612f29cbe40
+SHA256: 43d82f4e2ba4c90c9ec3c8c6fac4ca044f99fe8787cdfe1557aaec7a62649852
+SHA512: 29d3c40befaf5d525b0355f7972a5643bf47061bda00dad232a5dbdf05857a51008e774ff56ce489fc0271c6f6b2e26992581b33554243a008d45e2ba574fd97
 Description: Official latest Google Cloud repository
 
 Package: repo-postgresql
@@ -75,10 +75,10 @@ Maintainer: zdm <zdm@softvisio.net>
 Installed-Size: 44
 Depends:
 Filename: dists/binary-all/repo-postgresql_1.0.0_all.deb
-Size: 4322
-MD5sum: 543429958154fc83cc2c6dfd4d2b696d
-SHA1: 2b37bc353e68b7c373f6e14a29927f53e49ef38a
-SHA256: 9c19f77b668b812fe55d3dd8cf49006e4f394965727b0362d237389ec63424ec
-SHA512: 1d5a8e21640749790528f88c5ef23f1c9994a0db194b91d72b1db1e0d9818e04abf939815766fd7394d87ea0be9f57ea2a2b28b09db67b08e1ceca7e5bef9104
+Size: 4458
+MD5sum: b53fd38fa62dd12b0c957c5d76cdbac0
+SHA1: e01331d34b0579f754b1be33789220ccd450d43a
+SHA256: 785a32793462e8a2d6b033296abf215a35ac384eb53539367e875d82416b0588
+SHA512: 2ab9ec805b15f105f48368a45654650fb1153bc0a73688818cb0c7ce3fa2865a35104892b159036637d8e10c2b50dcffefc1f26207a6dbde881051e4bc3f861a
 Description: Official latest PostgreSQL repository
 
