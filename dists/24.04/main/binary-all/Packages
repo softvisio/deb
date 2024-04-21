@@ -12,6 +12,20 @@ SHA256: 60af5d9c5a914fad7f4e8a1fe7f16c8ecd8cfed793bfa28959b21951f809a341
 SHA512: 02d5247b37eeab59107e01d0c64d9e62d3f8ae9c2ad82623e64fb98dacb9dd825c2ee31a903f6056c74e19d71efbc06ebd8917ddefaa8d25a8f9d7cc777205d3
 Description: Node version management
 
+Package: n
+Architecture: all
+Version: 9.2.3
+Maintainer: zdm@softvisio.net
+Installed-Size: 308
+Depends:
+Filename: dists/binary-all/n_9.2.3_all.deb
+Size: 35886
+MD5sum: 0254a71960213725274719122a3a8fb0
+SHA1: 5b20bd7a8443d8d49aa8c9e9b2d5c5c04dde617c
+SHA256: 18bd5dffed648fc7b72f6b4b18e48434bf14652f3af7c8d41a6dab08cf4b3584
+SHA512: 921c39029de0b0d95f553994e3ecf6f2ae7354a22536e45f9aa9a149568b0eb109eb1af040b12f3df16b31bf9995b810d166815652e9c95f7236f8377f637815
+Description: Node version management
+
 Package: nvim
 Architecture: all
 Version: 0.9.5
