@@ -3,7 +3,7 @@
 
 NAME=nginx-stable
 EPOCH=0
-VERSION=1.24.0
+VERSION=1.26.0
 REVISION=0
 ARCHITECTURE=source
 DESCRIPTION="A high performance web server and reverse proxy server"
