@@ -1,6 +1,6 @@
 ARG FROM
 
-FROM ${FROM}
+FROM $FROM
 
 USER root
 
