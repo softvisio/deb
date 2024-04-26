@@ -7,6 +7,7 @@ VERSION=$(git ls-remote --tags https://github.com/nginx/nginx.git | perl -lne 'm
 REVISION=0
 ARCHITECTURE=source
 DESCRIPTION="A high performance web server and reverse proxy server"
+DEPENDS=libpcre3
 OPTFLAGS="-O2 -g" # rpm --eval "%{optflags}"
 LD_FLAGS=         # rpm --eval "%{build_ldflags}" XXX
 MAKE_FLAGS="-j4"  # rpm --eval "%{_smp_mflags}"
