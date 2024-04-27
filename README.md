@@ -4,21 +4,21 @@
 
 ```sh
 cat << EOF > /etc/apt/sources.list.d/softvisio.list
-# deb [trusted=yes] https://raw.githubusercontent.com/softvisio/deb/main/ $(. /etc/os-release && echo $VERSION_ID) main
-deb [signed-by=/usr/share/keyrings/softvisio-archive-keyring.gpg] https://raw.githubusercontent.com/softvisio/deb/main/ $(. /etc/os-release && echo $VERSION_ID) main
+# deb [trusted=yes] https://raw.githubusercontent.com/softvisio/apt/main/ $(. /etc/os-release && echo $VERSION_ID) main
+deb [signed-by=/usr/share/keyrings/softvisio-archive-keyring.gpg] https://raw.githubusercontent.com/softvisio/apt/main/ $(. /etc/os-release && echo $VERSION_ID) main
 EOF
 ```
 
 ### Import public key
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/softvisio/deb/main/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/softvisio-archive-keyring.gpg
+curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/softvisio-archive-keyring.gpg
 ```
 
 ### Import keyring
 
 ```sh
-curl -fsSLo /usr/share/keyrings/softvisio-archive-keyring.gpg https://raw.githubusercontent.com/softvisio/deb/main/dists/keyring.gpg
+curl -fsSLo /usr/share/keyrings/softvisio-archive-keyring.gpg https://raw.githubusercontent.com/softvisio/apt/main/dists/keyring.gpg
 ```
 
 ### Export / import private key
