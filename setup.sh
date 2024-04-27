@@ -23,10 +23,10 @@ function _install() {
 
     curl -fsSLo /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg https://raw.githubusercontent.com/$REPO_SLUG/dists/keyring.gpg
 
+    # deb [trusted=yes] https://raw.githubusercontent.com/$repo_slug/ $version_id $component
+
     cat << EOF > /etc/apt/sources.list.d/${REPO_NAME}.list
 deb [signed-by=/usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg] https://raw.githubusercontent.com/$REPO_SLUG/ $VERSION_ID $COMPONENT
-
-# deb [trusted=yes] https://raw.githubusercontent.com/$REPO_SLUG/ $VERSION_ID $COMPONENT
 EOF
 
 }
