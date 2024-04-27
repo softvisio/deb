@@ -10,31 +10,34 @@ REPO_SLUG=softvisio/apt/main
 COMPONENT=main
 VERSION_ID=$(. /etc/os-release && echo $VERSION_ID)
 
-function _setup() {
-    apt-get update
-    apt-get install -y make patch gcc g++
+function _remove() {
+    rm -rf /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg
+    rm -rf /etc/apt/sources.list.d/${REPO_NAME}.list
+
+    apt-get clean all
+
 }
 
-rm -rf /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg
-rm -rf /etc/apt/sources.list.d/${REPO_NAME}.list
+function _install() {
+    _remove
 
-apt-get clean all
+    curl -fsSLo /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg https://raw.githubusercontent.com/$REPO_SLUG/dists/keyring.gpg
 
-curl -fsSLo /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg https://raw.githubusercontent.com/$REPO_SLUG/dists/keyring.gpg
-
-cat << EOF > /etc/apt/sources.list.d/${REPO_NAME}.list
+    cat << EOF > /etc/apt/sources.list.d/${REPO_NAME}.list
 deb [signed-by=/usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg] https://raw.githubusercontent.com/$REPO_SLUG/ $VERSION_ID $COMPONENT
 
 # deb [trusted=yes] https://raw.githubusercontent.com/$REPO_SLUG/ $VERSION_ID $COMPONENT
 EOF
 
+}
+
 case "$1" in
-    setup)
-        _setup
+    install)
+        _install
         ;;
 
-    cleanup)
-        _cleanup
+    remove)
+        _remove
         ;;
 
     *)
