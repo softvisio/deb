@@ -7,14 +7,14 @@
         "softvisio",
         "rpm"
     ],
-    "homepage": "https://github.com/softvisio/deb",
+    "homepage": "https://github.com/softvisio/apt",
     "bugs": {
-        "url": "https://github.com/softvisio/deb/issues",
+        "url": "https://github.com/softvisio/apt/issues",
         "email": "zdm <zdm@softvisio.net>"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/softvisio/deb.git"
+        "url": "git+https://github.com/softvisio/apt.git"
     },
     "license": "Proprietary Software",
     "author": "zdm <zdm@softvisio.net>"
