@@ -3,7 +3,7 @@
 ### Install repository
 
 ```sh
-/bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/install.sh)
+/bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/setup.sh) install
 ```
 
 ### Import public key
