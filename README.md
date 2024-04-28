@@ -14,7 +14,7 @@
 
 ### Manually install GPG key
 
-Install public key
+Importl public key
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/softvisio-archive-keyring.gpg
