@@ -1,4 +1,4 @@
-# Debiam repository
+# Apt repository
 
 ### Install repository
 
