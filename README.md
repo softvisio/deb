@@ -6,6 +6,12 @@
 /bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/setup.sh) install
 ```
 
+### Remove repository
+
+```sh
+/bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/setup.sh) remove
+```
+
 ### Import public key
 
 ```sh
