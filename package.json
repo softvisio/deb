@@ -2,10 +2,10 @@
     "name": "apt",
     "version": "0.0.0",
     "private": true,
-    "description": "Softisio apt repository",
+    "description": "Apt repository",
     "keywords": [
         "softvisio",
-        "rpm"
+        "apt"
     ],
     "homepage": "https://github.com/softvisio/apt",
     "bugs": {
