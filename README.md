@@ -14,13 +14,13 @@
 
 ### Manually install GPG key
 
-Import public key
+Install public key
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/softvisio-archive-keyring.gpg
 ```
 
-or import keyring
+or install keyring
 
 ```sh
 curl -fsSLo /usr/share/keyrings/softvisio-archive-keyring.gpg https://raw.githubusercontent.com/softvisio/apt/main/dists/keyring.gpg
