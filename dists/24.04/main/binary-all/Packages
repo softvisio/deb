@@ -14,6 +14,20 @@ Description: Node version management
 
 Package: nvim
 Architecture: all
+Version: 0.10.0
+Maintainer: zdm@softvisio.net
+Installed-Size: 44276
+Depends:
+Filename: dists/binary-all/nvim_0.10.0_all.deb
+Size: 12188470
+MD5sum: f6c64a06814ed91b39be47a0b439b815
+SHA1: 99b7052a9b3a03c7f9cf5b1b1b4ccaa0451b9be4
+SHA256: 3834040b58eac1975f0094bc7dc7a1a798dd45993403a0d0b1b38812b6de2278
+SHA512: 86b8811899a53fce11ca56a9403d3884c44335e217c76a2d46a00ecbd77153ffbfdf62d18841aae50a38fa6655e3ae287f2c9ec2e0e0e0f6ba79f5dcbe8d9923
+Description: Neovim stable build
+
+Package: nvim
+Architecture: all
 Version: 0.9.5
 Maintainer: zdm@softvisio.net
 Installed-Size: 38900
