@@ -26,20 +26,6 @@ SHA256: 3834040b58eac1975f0094bc7dc7a1a798dd45993403a0d0b1b38812b6de2278
 SHA512: 86b8811899a53fce11ca56a9403d3884c44335e217c76a2d46a00ecbd77153ffbfdf62d18841aae50a38fa6655e3ae287f2c9ec2e0e0e0f6ba79f5dcbe8d9923
 Description: Neovim stable build
 
-Package: nvim
-Architecture: all
-Version: 0.9.5
-Maintainer: zdm@softvisio.net
-Installed-Size: 38900
-Depends:
-Filename: dists/binary-all/nvim_0.9.5_all.deb
-Size: 10936100
-MD5sum: 56a223a94ca11f95a932c24599573123
-SHA1: d8c1171101535e605ef1caed064901f54de48aaf
-SHA256: 44191345e00f8431c94a727c8b7d2b76b34062eb562e3f13bcc63589fe893ea2
-SHA512: a5dfa3aaf7d4bf7abbc9a61fdf453e5b6a038e8befd2223165ce68034ad0fa962e8e2d456259927a2a3d94fc94f6a05384de49223ed798c35f40c2a2068f43bd
-Description: Neovim stable build
-
 Package: repo-docker
 Architecture: all
 Version: 1.0.0
