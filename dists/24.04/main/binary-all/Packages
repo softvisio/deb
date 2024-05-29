@@ -1,0 +1,84 @@
+Package: n
+Architecture: all
+Version: 9.2.3
+Maintainer: root@softvisio.net
+Installed-Size: 308
+Depends:
+Filename: dists/binary-all/n_9.2.3_all.deb
+Size: 35888
+MD5sum: fa6014527c63e41029644a77cdb5a11f
+SHA1: 87debfd8560fa4aab460944d7616842ccd66fbfb
+SHA256: 4639c7fedb8f7babf1d1a77090988c301542bf40f184df179d2484f2c7e70ddc
+SHA512: cacae7c9c338e657208f487a6cd8792b02562f1e169e776d96dc2de05e7389f47c0685d870cedc3c3d57313fdc516dd8f22c1a3181ea9170e78296b811bc6f03
+Description: Node version management
+
+Package: nvim
+Architecture: all
+Version: 0.10.0
+Maintainer: root@softvisio.net
+Installed-Size: 44276
+Depends:
+Filename: dists/binary-all/nvim_0.10.0_all.deb
+Size: 12188464
+MD5sum: ecb595c911ce424d68722e7b1a6c3f22
+SHA1: d503075f9b7f8c82a72b1ea0cb087ddc209cac16
+SHA256: f1dafda5317ebc443c604b14f68d5442ffe638a81add7fad9afe454775755f7c
+SHA512: 73633d4e1922fe8856ecbd3cab4c033bddc276f177a6935f9cde7f129c4ad1c85a9b95a0296141e0bc24cc1e68796858d71eb1cc8fbb62606a255da9ca760a6a
+Description: Neovim stable build
+
+Package: repo-docker
+Architecture: all
+Version: 1.0.0
+Maintainer: root@softvisio.net
+Installed-Size: 44
+Depends:
+Filename: dists/binary-all/repo-docker_1.0.0_all.deb
+Size: 3858
+MD5sum: d1c034bb66be2765e0b51f70835fb1a1
+SHA1: ddbbb323cae4b3c1493f1494ee8ab654d6d4550e
+SHA256: adcb02b6351e5e8619e9345fdc34cd078eddf7aad625fae28ca1746a5ea03661
+SHA512: a742fce695fc9b3a434060416abb5c75f4e2ff03a3ac289cf6eda2457642c285f73fbe343d6b3c6eca94eebf166787aefab6527cc942b134cfbcad348161c52e
+Description: Official latest Docker-CE repository
+
+Package: repo-google-chrome
+Architecture: all
+Version: 1.0.0
+Maintainer: root@softvisio.net
+Installed-Size: 52
+Depends:
+Filename: dists/binary-all/repo-google-chrome_1.0.0_all.deb
+Size: 12844
+MD5sum: 78921fef33a33632b1c33fc5a433147e
+SHA1: 253f3192250a02c519c154dfa86b0e031af24f8f
+SHA256: 30ced00f3ddf365c248d94b60245793a625be56b47a34bde79d5634ebed88f1f
+SHA512: 6254d9dcefdd375440209764e361fb7ee3a562062a51076603210f1f7a76aa953023f9b59fa6b1042423908c3323532aa65a128e578ca76c8eeee78cc7bc6c2b
+Description: Official latest Google Chrome repository
+
+Package: repo-google-cloud
+Architecture: all
+Version: 1.0.0
+Maintainer: root@softvisio.net
+Installed-Size: 40
+Depends:
+Filename: dists/binary-all/repo-google-cloud_1.0.0_all.deb
+Size: 2786
+MD5sum: 5c5d294abfbcadb97c99bcf358b3da0f
+SHA1: df6fd21486a498084c3f7992db3e1f33be94f2db
+SHA256: ecf08426741a19d155c7b3ba49f3a92412ada6bfb4b3a130a7fde5c76d45a1ba
+SHA512: 2f3b345e59d91bd400c544c4c58d4d3d086b88524aaf74e5654116dc4f0810824369716205e318462140e86c196253654a36789989c924422af3bae9d7b97cf3
+Description: Official latest Google Cloud repository
+
+Package: repo-postgresql
+Architecture: all
+Version: 1.0.0
+Maintainer: root@softvisio.net
+Installed-Size: 44
+Depends:
+Filename: dists/binary-all/repo-postgresql_1.0.0_all.deb
+Size: 4458
+MD5sum: 2c6ab1a46c00564446feacdc896c273c
+SHA1: d7e83f993e51f628b6b9734112eb6ef1135add40
+SHA256: 60691dcb11c0480003dbcceb43f3fc4d6fa1ca5be9056d06ad582ebc3366a0eb
+SHA512: 4df8affc8bc4c577ce9980fe1bebdc4417d504362867aa5b897e1e7b38e40a2486205b9416a340d509bf09b3a2aa902356b2a3a1939339fe72ca2e6deb76c612
+Description: Official latest PostgreSQL repository
+
