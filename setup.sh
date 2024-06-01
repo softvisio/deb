@@ -23,7 +23,7 @@ function _install() {
 
     apt-get install -y gpg
 
-    curl -fsSL https://raw.githubusercontent.com/$REPO_SLUG/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg
+    curl -fsSL https://raw.githubusercontent.com/$REPO_SLUG/dists/public-key.gpg | gpg --dearmor -o /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg
 
     # deb [trusted=yes] https://raw.githubusercontent.com/$repo_slug/ $version_id $component
 
