@@ -31,7 +31,7 @@ curl -fsSLo /usr/share/keyrings/softvisio-archive-keyring.gpg https://raw.github
 Export:
 
 ```sh
-gpg --export-secret-keys zdm@softvisio.net > private.key
+gpg --export-secret-keys apt@softvisio.net > private.key
 ```
 
 Import:
@@ -43,5 +43,5 @@ gpg --import private.key
 ### Sign
 
 ```sh
-gpg --clearsign --yes -u zdm@softvisio.net -o InRelease Release
+gpg --clearsign --yes -u apt@softvisio.net -o InRelease Release
 ```

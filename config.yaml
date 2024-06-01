@@ -1,7 +1,7 @@
 label: Softvisio repository
 
-maintainer: root@softvisio.net
-gpgKeyName: zdm@softvisio.net
+maintainer: apt@softvisio.net
+gpgKeyName: apt@softvisio.net
 
 component: main
 
