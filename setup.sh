@@ -21,7 +21,7 @@ function _remove() {
 function _install() {
     _remove
 
-    curl -fsSLo /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg https://raw.githubusercontent.com/$REPO_SLUG/dists/keyring.gpg
+    curl -fsSL https://raw.githubusercontent.com/$REPO_SLUG/main/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/${REPO_NAME}-archive-keyring.gpg
 
     # deb [trusted=yes] https://raw.githubusercontent.com/$repo_slug/ $version_id $component
 
