@@ -28,6 +28,12 @@ Export:
 gpg --export-secret-keys apt@softvisio.net > private.key
 ```
 
+Export public key:
+
+```shell
+gpg --armor --export apt@softvisio.net --output key.gpg
+```
+
 Import:
 
 ```shell
