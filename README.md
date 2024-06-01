@@ -16,13 +16,13 @@
 
 Importl public key
 
-```sh
+```shell
 curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/dists/key.gpg | gpg --dearmor -o /usr/share/keyrings/softvisio-archive-keyring.gpg
 ```
 
 or install keyring
 
-```sh
+```shell
 curl -fsSLo /usr/share/keyrings/softvisio-archive-keyring.gpg https://raw.githubusercontent.com/softvisio/apt/main/dists/keyring.gpg
 ```
 
@@ -30,18 +30,18 @@ curl -fsSLo /usr/share/keyrings/softvisio-archive-keyring.gpg https://raw.github
 
 Export:
 
-```sh
+```shell
 gpg --export-secret-keys apt@softvisio.net > private.key
 ```
 
 Import:
 
-```sh
+```shell
 gpg --import private.key
 ```
 
 ### Sign
 
-```sh
+```shell
 gpg --clearsign --yes -u apt@softvisio.net -o InRelease Release
 ```
