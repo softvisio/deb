@@ -1,0 +1,56 @@
+Package: nginx-latest
+Architecture: amd64
+Version: 1.27.0
+Maintainer: apt@softvisio.net
+Installed-Size: 6616
+Depends: libpcre3
+Filename: dists/24.04/main/binary-amd64/nginx-latest_1.27.0_amd64.deb
+Size: 3080914
+MD5sum: d346f5c92936ca654873e32d23135b5e
+SHA1: f6100944ac220ce9f5d7fda81b18d6003ba1dfbe
+SHA256: 2e944cd5642c1fb23446b2519a6141faecf4ff27b67c58afade206d22193743a
+SHA512: b1cbe81c7f8d076c57a5a3f8c81be020086308780db87a4da4a13fe6bdd0997a4e1b0677ef1b5b271d90c5a7fc0b58fd638efbd1ce4886304dede1581f7f094b
+Description: A high performance web server and reverse proxy server
+
+Package: nginx-stable
+Architecture: amd64
+Version: 1.26.1
+Maintainer: apt@softvisio.net
+Installed-Size: 6616
+Depends: libpcre3
+Filename: dists/24.04/main/binary-amd64/nginx-stable_1.26.1_amd64.deb
+Size: 3080114
+MD5sum: 7a1abfb0767f934b613ed13644786324
+SHA1: c40851d1a87357455685db05b78c06cb99767c4b
+SHA256: 47383c8d8abfdf226b759baa30db1a129144ffbbe578d9a73312e5b104a2819a
+SHA512: 971b30eb85d859abe28a261512fb9244a6e9f843fe17bd3aedd4a5a7eeeb4741c51547baf7491935e364920a9dfe03fdbd6058e9d0d2e76a82ed0e371a502fd8
+Description: A high performance web server and reverse proxy server
+
+Package: postgresql-16-softvisio-admin
+Architecture: amd64
+Version: 1.1.5
+Maintainer: apt@softvisio.net
+Installed-Size: 48
+Depends:
+Filename: dists/24.04/main/binary-amd64/postgresql-16-softvisio-admin_1.1.5_amd64.deb
+Size: 2026
+MD5sum: 4083de26077ed40059656d691f0b9397
+SHA1: 94de49aed7ebeb41cc5b08a2a1925eacd853eb0c
+SHA256: aef6e6a9a6596342242cf9659c0e2e6e742396244d09cfa611860b33a1b1a89a
+SHA512: b46025cb6cc756c2209ebd35a2cc3f361ca58d47b6d926ba42dec9cc1f48ecff95ae8731415ee4388b8e48b397e43414722467993ebd7c033f5cf5afab3befc7
+Description: PostgreSQL admin extension
+
+Package: postgresql-16-softvisio-types
+Architecture: amd64
+Version: 1.1.1
+Maintainer: apt@softvisio.net
+Installed-Size: 44
+Depends:
+Filename: dists/24.04/main/binary-amd64/postgresql-16-softvisio-types_1.1.1_amd64.deb
+Size: 1556
+MD5sum: 4ff662511f897a4af0922528b8a65206
+SHA1: 777b842577bc0ef4d8dfc89a7647d7f4c7482cab
+SHA256: 9a8e0e9e358efd655952b309f7cafc402cbf630756ef03864e55e70c7712e718
+SHA512: 10ddb754e0a336d8999e078acd1968b9caf5f64ab0bb108939a24e0fef9715a8fb14d679ce4e1f1b57753a445b03f5efad8621852c5e4368dd61ab62dbcd252d
+Description: PostgreSQL types extension
+

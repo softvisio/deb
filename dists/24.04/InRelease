@@ -1,24 +1,28 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Architectures: all
+Architectures: all amd64
 Codename: 24.04
 Components: main
-Date: Sat, 01 Jun 2024 15:06:35 +0000
+Date: Sat, 01 Jun 2024 15:11:16 +0000
 Label: Softvisio repository
 Suite: 24.04
 MD5Sum:
- d41d8cd98f00b204e9800998ecf8427e                0 main/binary-all/Packages
+ 51435ea1e5a4878e82e5f7e696292f85             3140 main/binary-all/Packages
+ dcf3a28ea05a2678b20a5f26f3402c29             2292 main/binary-amd64/Packages
 SHA1:
- da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-all/Packages
+ e61e4c37f30db6a8f7aa339ff8d4fc181f6f65a9             3140 main/binary-all/Packages
+ 36ba9ad630c31d9e1de9d00cf9777eff47bda27e             2292 main/binary-amd64/Packages
 SHA256:
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-all/Packages
+ d189b30fb4afcf4c1d0d36ddb1ff76ebdbb5de7796caa0d9a5e9b3e226569746             3140 main/binary-all/Packages
+ e8180ab656ea21c19eb2d330df8ecea0af247579e3c60f6f3279f1e561ef85b8             2292 main/binary-amd64/Packages
 SHA512:
- cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-all/Packages
+ 6a9fae56dcc03d394163c13eef35eed84f81b0d230c0d737a6912af362ceb4387637fe9d8833ab34e121c197292010cf8c47b70772d2ba30571c22754c01d27e             3140 main/binary-all/Packages
+ 2405ba11db1e0e6edea06eb0397b45830c6575ecb592ec309c0d30dde96cb5e553a87d8495469bc36e246297f8cefac3fa3c8877837d56a8281ab592c2848fb1             2292 main/binary-amd64/Packages
 -----BEGIN PGP SIGNATURE-----
 
-iIgEARYKADAWIQSy+GrmQpVUQ/2Ddb/+uZP9avn7SwUCZls4+xIcYXB0QHNvZnR2
-aXNpby5uZXQACgkQ/rmT/Wr5+0tDnAEA/RF2gC8wJoFKJ9gph/79Wvq3JE8RmQfG
-9D6oTLIFEtQA/2iymxU437NRSwyKQtC1Oj4n3u62sBrsqVjssdOmBA0D
-=OPVf
+iIgEARYKADAWIQSy+GrmQpVUQ/2Ddb/+uZP9avn7SwUCZls6FBIcYXB0QHNvZnR2
+aXNpby5uZXQACgkQ/rmT/Wr5+0vnZAEA2kI6uR6rRcR/fYYK53CO5eyfme6AKv/A
+GdSJT1MdiE0A/AjULAf1VYKZptEiX3mvcG0yYI7ne8Q94ey4zSKpAckM
+=1Cp3
 -----END PGP SIGNATURE-----
