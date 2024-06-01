@@ -2,13 +2,13 @@
 
 ### Install repository
 
-```sh
+```shell
 /bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/setup.sh) install
 ```
 
 ### Remove repository
 
-```sh
+```shell
 /bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/apt/main/setup.sh) remove
 ```
 
