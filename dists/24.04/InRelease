@@ -1,28 +1,24 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Architectures: all amd64
+Architectures: all
 Codename: 24.04
 Components: main
-Date: Sat, 01 Jun 2024 14:41:41 +0000
+Date: Sat, 01 Jun 2024 15:06:35 +0000
 Label: Softvisio repository
 Suite: 24.04
 MD5Sum:
- 61b682865a44f53d6c3c762650f6327a             3140 main/binary-all/Packages
- f01e9c5b053d5046471f4a5bf151188f             2292 main/binary-amd64/Packages
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-all/Packages
 SHA1:
- 3546109b523f58a1a70e901d75d0b8552875609c             3140 main/binary-all/Packages
- 7db8916b5bd11efd78120f6eee759040b62f187c             2292 main/binary-amd64/Packages
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-all/Packages
 SHA256:
- 028e0b405b073c1cfab2f7ee638d32caf050374038b9e245c601eea5e1e846db             3140 main/binary-all/Packages
- 900253775391818f41823c386f09079c720eb126873913c52cdb2ffb97f4ac1a             2292 main/binary-amd64/Packages
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-all/Packages
 SHA512:
- 8d56aaaf132aaf46d762af59f61b8a5a9614979b5c9b4e9f4b3f847fafee3808dfc25c8a722df01832b492da6d74cf343b2c2f9fc4500c45204f323aee015dd8             3140 main/binary-all/Packages
- 82b803482dfe2efd64cc99161186889f61cdcbaf647cc3d9e25c7863099adb36ae7cc8507094e03af6b7ea2df4526a6ac024e4605eb104f03355f9ec433f5e1a             2292 main/binary-amd64/Packages
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-all/Packages
 -----BEGIN PGP SIGNATURE-----
 
-iIgEARYKADAWIQSy+GrmQpVUQ/2Ddb/+uZP9avn7SwUCZlszJRIcYXB0QHNvZnR2
-aXNpby5uZXQACgkQ/rmT/Wr5+0uq8QD/XWSy/0iZie7oV0QYwONM/fd6RUagHgA4
-a1tcyJPzI34BALI2knemYV7mpou0VHM9qJZ8NUw0Ox3yqGsguKNQ6wwI
-=Svm8
+iIgEARYKADAWIQSy+GrmQpVUQ/2Ddb/+uZP9avn7SwUCZls4+xIcYXB0QHNvZnR2
+aXNpby5uZXQACgkQ/rmT/Wr5+0tDnAEA/RF2gC8wJoFKJ9gph/79Wvq3JE8RmQfG
+9D6oTLIFEtQA/2iymxU437NRSwyKQtC1Oj4n3u62sBrsqVjssdOmBA0D
+=OPVf
 -----END PGP SIGNATURE-----
