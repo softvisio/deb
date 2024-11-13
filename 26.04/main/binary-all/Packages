@@ -1,0 +1,289 @@
+Package: bcompare.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 8
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/bcompare.repository_1.0.0_all.deb
+Size: 3172
+MD5sum: 7697fc313973af8ec91d2c2d514be6a5
+SHA1: 69fbf5b64ab6e29d27ae27ae4cf249b86f12e058
+SHA256: a14b1615ce09ebe440f99e048d78a846c16a1775e0c21946e52f43410d4e4400
+SHA512: cccbfaf11732ac2fbb11601ba653d1e4268c6b80678517079786850e0e8920fe09169808b9145a4960b28ecbf8443ccb97847395503c0072e94f025fca07da91
+Description: BCompare official repository
+
+Package: cloudflare-warp.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/cloudflare-warp.repository_1.0.0_all.deb
+Size: 2268
+MD5sum: 0f070a3f276a246061e0c1a085bbadd4
+SHA1: 64ce0f29ac47899d4eda3c70a1362857679095f4
+SHA256: 0030efee08d39b19f6613392c4496628497fab6364fc1a404571f7848bedae80
+SHA512: ce90f6dda2b892fe35181c05459ca17513f8eef9d023e645306685085bfb44df73c13ea0d16072c45c7cdf55aad99c867554406084ecfa6fe285651b953a8346
+Description: Cloudflare WARP official repository
+
+Package: cloudflared.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 8
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/cloudflared.repository_1.0.0_all.deb
+Size: 3178
+MD5sum: 348841c4ea80f8177495205c61ad6152
+SHA1: 816c38aea6a47f25654b7e83751bff468698af39
+SHA256: f32542e9fbe638b8a0e6583a5e9a2462741841c909432e5c479866d9b4864ffe
+SHA512: b99621e928d8ba9021b59c1612554181944942cec76ab55a437411ca087a11ce76a146a5d81ae7c31f38e681146dbbe2fcb897dad8521777f6621217cdc4d563
+Description: Cloudflared official repository
+
+Package: docker.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/docker.repository_1.0.0_all.deb
+Size: 3846
+MD5sum: afad9b1b00aa00905f86a3d8263336a4
+SHA1: 130612edb7a1bfbfba9540fe1ffbe42b56203548
+SHA256: db5cdc72360f58f61d263fd5e59e1da33af8692392fb1f55556a2ecdd8402aa7
+SHA512: 15edf54912edc55cc5146afe651356bb8cfa42c00e3b6f8c6893a2ce77fbe92124d81670f653cae794413942fe22d4343b8d07e76493627b1ebf227c4a0f067c
+Description: Docker-CE official repository
+
+Package: fnm
+Architecture: all
+Version: 1.39.0
+Maintainer: deb@softvisio.net
+Installed-Size: 7208
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/fnm_1.39.0_all.deb
+Size: 3269498
+MD5sum: 012184f79b0cc217fbbf5f010e2724e1
+SHA1: 3af0d13959781e543205d6edab0edf372410b13f
+SHA256: 0dc9b0a37b7e665caddc1fafdb1c4393edd6f31535ee7cda17276f9df87e9a36
+SHA512: 6a933bce457c3b435b71441ae9a40b842074458b66954c39d337cd46babf308f926d2db808485386c726e81e01e7637be0a7c2acd8d1038c7018df8a79466c81
+Description: Node version management
+
+Package: git-lfs.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/git-lfs.repository_1.0.0_all.deb
+Size: 3910
+MD5sum: c75d84e90ef9faeceb9d1037bbf648db
+SHA1: 7dc7eb7bed6c8bc20610d0f81c51f0f877f732dd
+SHA256: 79ce58c2aa1f88ba7f99005b4bf29bbf18c2f16fada740efc02566b8466cef2c
+SHA512: 920a843f833e74d8d8243bd25419a652083a3a084dc60d39a3df309f358ffdaa44c5d4102babd3bb377be2c2e817152370dd00186dd1b75fe6b0d2439514c6fd
+Description: Git LFS official repository
+
+Package: git.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/git.repository_1.0.0_all.deb
+Size: 2256
+MD5sum: f3b79f57180603cfe08b8d2d76b2cd3f
+SHA1: 9047bd6cf98893e601508c11eae3ac5704f790a2
+SHA256: 8226cc6a1801a89d5cf91e4a41be7e22b399b5d2294cbea6afabcf510b705f94
+SHA512: 6c373807c1191bde98e0783854d2154326fbd8865eb97ba986e862038750cc0f50c4b62aad53cb53dfbc9fd2217b78e91a644287c9d42be20fb916ac13b6e6d2
+Description: Git official repository
+
+Package: github-cli.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/github-cli.repository_1.0.0_all.deb
+Size: 5360
+MD5sum: aef40e299b3f3e5dc3b9dd367cecd3f2
+SHA1: be6d9878cb0ff59c5668e63fedcd5a957fbe3f40
+SHA256: f65245a77243babccd23d911ace8ca86f8b03a36be42ba0c21c2d296bff692b2
+SHA512: 2fdb4a3c22203a3f4be7b5939fab0ae323e7ab1741817d8ce07c5c9cee45de974fab5f6a2eca8f8fe3f8f58f8d8d0b63efd5a93e5c4d051a51aa2d043d113542
+Description: GitHub Cli official repository
+
+Package: google-chrome.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 20
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/google-chrome.repository_1.0.0_all.deb
+Size: 14956
+MD5sum: 5bcf290df9e855819e19f3077363f125
+SHA1: bda9bf6bd8a8231d834f793f16d60bd0dc47403f
+SHA256: e1ac493d85252a6d45c3d92f50d14cdc287b7ddfb65ce9eee44038b031612f72
+SHA512: 6ad6099e07c0bc22076502eceb6bd07a8a9050c6cefdcdf7d34b2c6af247d1c6bd47c20ee3c817a61cf477f3d29b7d62c57ade5f668069a7e2cdda5911039ef8
+Description: Google Chrome official repository
+
+Package: google-cloud.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 8
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/google-cloud.repository_1.0.0_all.deb
+Size: 1598
+MD5sum: 929a0cded9d9f496d417bfca8d258997
+SHA1: cdbe0130118324da4c6d5c27053901890ac62c49
+SHA256: 593e7a2c4483ada9faebef02730a4d93fbca8ee520f8803ca245c12a1b42177b
+SHA512: 775f25ab6477d850fb9b49a279b0996b3fbcea57aae7928a115418692c22b0596bf7c54e6fecd789ccd604ae650204e8dc9f884ee044aa458b6a70b7d2a15473
+Description: Google Cloud official repository
+
+Package: microsoft-edge.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 8
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/microsoft-edge.repository_1.0.0_all.deb
+Size: 1570
+MD5sum: 8586ca889908c79c63b7e6384198e206
+SHA1: 95d03bd63be1391543c1066d12b0dbd97a2ae521
+SHA256: ea37ebbfce1fce70917e6b98c9b07ec54c85de2bc3929e5f02b8153f2f65d5e4
+SHA512: 5a1c1ec53c2c1fc26821028caaabd952d00fa3ea490a588af7e6e527d443c7d627f0a5230b8c90a6c44fbc0b0ac4f7cf168c523a2be04b0fbf152143805169f9
+Description: Microsoft Edge official repository
+
+Package: nginx-latest.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 20
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/nginx-latest.repository_1.0.0_all.deb
+Size: 9104
+MD5sum: e9465c937d231cf1f37fbf4b3b47a007
+SHA1: dc7dac77e1e9c7a0dd7b1a33abdf3e39ce5fcfc6
+SHA256: 3f9cd8abe6598d24212a42862a51c9fdd383ecaedefb9a5db3be73d8bbda670d
+SHA512: a7d0801969b372d23d06c9a1c1803b179ed0085d2bbd6b38b2af54c13b01d6ff2548091b23cb0db7ee1c070c95a7fc5ab873b17e1764b7eac3ea3f76c2641aff
+Description: Nginx stable official repository
+
+Package: nginx-next.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 20
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/nginx-next.repository_1.0.0_all.deb
+Size: 9104
+MD5sum: ba6e5313bb9ad16d1e1af349dc60a79b
+SHA1: c1b1ea2b98e9470405664ec013d33a8fbbf229f9
+SHA256: c8d6ba6725036a706c7434fdfcc4b925bf5411432e796e0501a0e195a2cb24b1
+SHA512: 441d836c323ae52406425da8f7cb2bb9e9fad957792af6891dce6512eacb89f169b28082380aef70fe2c733324a8863a0460a086d15682dcf599070408039d48
+Description: Nginx mainline official repository
+
+Package: nvim
+Architecture: all
+Version: 0.12.5
+Maintainer: deb@softvisio.net
+Installed-Size: 40516
+Depends: tree-sitter-cli
+Recommends:
+Conflicts: nvim-next
+Replaces: nvim-next
+Filename: dists/binary-all/nvim_0.12.5_all.deb
+Size: 11287194
+MD5sum: 99d0a260a79c8cd719d688ed62317d8a
+SHA1: d83723e4e76ed09caa923ecff61a04328cf1da88
+SHA256: e0e8aefec173f35ffb100589534bd7ff0be0dfc05fba905dc8517ea79a080018
+SHA512: 557a6401db33b2bcfc70623148b1c6dfc3ed3e6ecdfa1e0198a5439b937d1cc94f0e70c8d84a7fa5c3d87fa25439ee92eea5f9f0c30e34bf08b9d08d17bc4aa7
+Description: Neovim stable build
+
+Package: postgresql.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/postgresql.repository_1.0.0_all.deb
+Size: 4470
+MD5sum: 8c5008119ef5c15fc61764d0e97bbcb5
+SHA1: b6f04b6129bb2131125564083b9c0241c7111812
+SHA256: 6a7c45a212968e189809d1b14832354ac5c76453b0d617ac7c5b22ba7d393f27
+SHA512: b3b9f874dfe486eef48063eaa0b1b6b0cb28ba4ae9734da836faf5421e0b09d4cc82095e850b30ab99f7c703f9115f8e11e0c6ec0115ca770104e18d00ef20d2
+Description: PostgreSQL official repository
+
+Package: veracrypt.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 12
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/veracrypt.repository_1.0.0_all.deb
+Size: 2270
+MD5sum: d270e3db2344bb2049ec9884887dc12e
+SHA1: 0d2b402670b7aaa807886afe702b943e3fbfb55f
+SHA256: 3d555ffa843040d8a59c50aa1b485a07b21bd5f24b168e42ab7f278203030dfd
+SHA512: 08e37fd2dd9f8c9f8f022a58cb5481d648a51e8dec105b225d7da25e09d6c4be7b67d1b27fb2df549c8f39441e1d4bd737f2ea1288b5ebba9a9051fa8b8d7fb8
+Description: Veracrypt official repository
+
+Package: vivaldi.repository
+Architecture: all
+Version: 1.0.0
+Maintainer: deb@softvisio.net
+Installed-Size: 8
+Depends:
+Recommends:
+Conflicts:
+Replaces:
+Filename: dists/binary-all/vivaldi.repository_1.0.0_all.deb
+Size: 3188
+MD5sum: b24ae35f23a7f0a56b1187a36e11b5fa
+SHA1: b6ff17dfab5202773e8215a5a0aae67b7023751f
+SHA256: 54a3f7b90bca689b7790d7c4766689e481a82a3f05eae44d654b5da44d72a316
+SHA512: 794d1673edd6680f2844d88d0c1ae311385e05323c60a3cc9a409d76f49f174b0d3a3ff162cfcea01798d754c6e65d1a9c7a991e165713ea24fd4f5ef52b27ab
+Description: Vivaldi official repository
+
