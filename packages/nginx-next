@@ -7,7 +7,7 @@ EPOCH=0
 VERSION=$(git ls-remote --tags https://github.com/nginx/nginx.git | perl -lne 'm[refs/tags/release-([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)
 REVISION=0
 ARCHITECTURE=source
-DEPENDS="libpcre2, libmaxminddb0"
+DEPENDS="libpcre2-8-0, libmaxminddb0"
 CONFLICTS="nginx-latest"
 REPLACES="nginx-latest"
 
