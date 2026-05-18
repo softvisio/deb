@@ -8,7 +8,7 @@
         "deb",
         "apt"
     ],
-    "homepage": "https://github.com/softvisio/deb-repository",
+    "homepage": "https://github.com/softvisio/deb-repository?tab=readme-ov-file#readme",
     "bugs": {
         "url": "https://github.com/softvisio/deb-repository/issues",
         "email": "root <root@softvisio.net>"
