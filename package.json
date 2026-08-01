@@ -3,7 +3,6 @@
     "private": true,
     "description": "Deb packages repository",
     "keywords": [
-        "softvisio",
         "deb packages repository",
         "deb",
         "apt"

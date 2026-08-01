@@ -74,30 +74,30 @@ git push -u origin dists
 
 ### Work with packages
 
-You need `@softvisio/cli` package:
+You need `@corejslib/cli` package:
 
 ```sh
-npm install --global @softvisio/cli
+npm install --global @corejslib/cli
 ```
 
 Build docker images:
 
 ```sh
-softvisio-cli deb-repository build-images
+ccli deb-repository build-images
 ```
 
 Build packages:
 
 ```sh
 # build all packages
-softvisio-cli deb-repository build-packages
+ccli deb-repository build-packages
 
 # build "nginx-latest" package
-softvisio-cli deb-repository build-packages nginx-latest
+ccli deb-repository build-packages nginx-latest
 ```
 
 Update repository data:
 
 ```sh
-softvisio-cli deb-repository update
+ccli deb-repository update
 ```
