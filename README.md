@@ -74,30 +74,30 @@ git push -u origin dists
 
 ### Work with packages
 
-You need `@corejslib/cli` package:
+You need `@corejslib/zcli` package:
 
 ```sh
-npm install --global @corejslib/cli
+npm install --global @corejslib/zcli
 ```
 
 Build docker images:
 
 ```sh
-ccli deb-repository build-images
+zcli deb-repository build-images
 ```
 
 Build packages:
 
 ```sh
 # build all packages
-ccli deb-repository build-packages
+zcli deb-repository build-packages
 
 # build "nginx-latest" package
-ccli deb-repository build-packages nginx-latest
+zcli deb-repository build-packages nginx-latest
 ```
 
 Update repository data:
 
 ```sh
-ccli deb-repository update
+zcli deb-repository update
 ```
