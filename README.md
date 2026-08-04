@@ -74,10 +74,10 @@ git push -u origin dists
 
 ### Work with packages
 
-You need `@corejslib/zcli` package:
+You need `@softvisio/zcli` package:
 
 ```sh
-npm install --global @corejslib/zcli
+npm install --global @softvisio/zcli
 ```
 
 Build docker images:
