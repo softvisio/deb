@@ -10,14 +10,6 @@ ARCHITECTURE=all
 DEPENDS=
 
 function build() {
-    cat << EOF > $DEBIAN/postinst
-#!/usr/bin/env bash
-
-VERSION_CODENAME=\$(source /etc/os-release && echo \$VERSION_CODENAME)
-
-sed -i -e "/VERSION_CODENAME/ s/VERSION_CODENAME/\$VERSION_CODENAME/" /etc/apt/sources.list.d/cloudflared.list
-EOF
-    chmod +x $DEBIAN/postinst
 
     # install
     apt-get install -y gpg
@@ -27,6 +19,6 @@ EOF
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/cloudflared.list
-deb [signed-by=/usr/share/keyrings/cloudflared-archive-keyring.gpg] https://pkg.cloudflare.com/cloudflared VERSION_CODENAME main
+deb [signed-by=/usr/share/keyrings/cloudflared-archive-keyring.gpg] https://pkg.cloudflare.com/cloudflared any main
 EOF
 }
