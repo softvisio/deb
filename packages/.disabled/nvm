@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 # vim: ft=sh
 
 tag=$(curl -fsSL "https://api.github.com/repos/nvm-sh/nvm/releases/latest" | jq --raw-output ".tag_name")
@@ -19,7 +19,7 @@ function build() {
 
     mkdir -p "$DESTDIR/etc/profile.d"
     cat << EOF > "$DESTDIR/etc/profile.d/nvm.sh"
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 if [[ -z \${NVM_DIR:-} ]]; then
     export NVM_DIR="\$(realpath ~)/.local/share/nvm"
@@ -31,7 +31,7 @@ EOF
 
     mkdir -p "${DESTDIR}${prefix}/bin"
     cat << EOF > "${DESTDIR}${prefix}/bin/nvm"
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 source "$prefix/nvm/nvm"
 

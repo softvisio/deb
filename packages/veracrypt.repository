@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 # vim: ft=sh
 
 NAME=veracrypt.repository
@@ -14,7 +14,7 @@ FINGERPRINT=A2464CAD19240F2C59FC031F9B9FBDD5426B515F
 
 function build() {
     cat << EOF > $DEBIAN/postinst
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 VERSION_CODENAME=\$(source /etc/os-release && echo \$VERSION_CODENAME)
 

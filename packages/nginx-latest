@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 # vim: ft=sh
 
 STABLE_VERSION=$(git ls-remote --branches https://github.com/nginx/nginx.git | perl -lne 'm[refs/heads/stable-([\d.]+)$]sm ? print $1 : next' | sort -V | tail -n 1)

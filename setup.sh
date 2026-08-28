@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 # script=$(curl -fsSL "https://raw.githubusercontent.com/softvisio/deb-repository/main/setup.sh")
 #

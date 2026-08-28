@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 # vim: ft=sh
 
 NAME=github-cli.repository
@@ -11,7 +11,7 @@ DEPENDS=
 
 function build() {
     cat << EOF > $DEBIAN/postinst
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 sed -i -e "/ARCH/ s/ARCH/\$(dpkg --print-architecture)/" /etc/apt/sources.list.d/github-cli.list
 EOF

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 # vim: ft=sh
 
 tag=$(curl -fsSL "https://api.github.com/repos/schniz/fnm/releases/latest" | jq --raw-output ".tag_name")
@@ -25,7 +25,7 @@ function build() {
 
     mkdir -p $DESTDIR/etc/profile.d
     cat << EOF > $DESTDIR/etc/profile.d/fnm.sh
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 if [[ -z \${FNM_DIR:-} ]]; then
     export FNM_DIR=\$(realpath ~)/.local/share/fnm
