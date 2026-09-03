@@ -27,10 +27,10 @@ EOF
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x${FINGERPRINT}" | gpg --dearmor -o $DESTDIR/usr/share/keyrings/veracrypt-archive-keyring.gpg
+    curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x${FINGERPRINT}" | gpg --dearmor -o $DESTDIR/usr/share/keyrings/veracrypt.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/veracrypt.list
-deb [arch=ARCH signed-by=/usr/share/keyrings/veracrypt-archive-keyring.gpg] https://ppa.launchpadcontent.net/unit193/encryption/ubuntu VERSION_CODENAME main
+deb [arch=ARCH signed-by=/usr/share/keyrings/veracrypt.gpg] https://ppa.launchpadcontent.net/unit193/encryption/ubuntu VERSION_CODENAME main
 EOF
 }

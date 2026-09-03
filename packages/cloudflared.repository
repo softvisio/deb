@@ -15,10 +15,10 @@ function build() {
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | gpg --dearmor -o $DESTDIR/usr/share/keyrings/cloudflared-archive-keyring.gpg
+    curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | gpg --dearmor -o $DESTDIR/usr/share/keyrings/cloudflared.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/cloudflared.list
-deb [signed-by=/usr/share/keyrings/cloudflared-archive-keyring.gpg] https://pkg.cloudflare.com/cloudflared any main
+deb [signed-by=/usr/share/keyrings/cloudflared.gpg] https://pkg.cloudflare.com/cloudflared any main
 EOF
 }

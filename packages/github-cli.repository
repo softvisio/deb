@@ -18,10 +18,10 @@ EOF
     chmod +x $DEBIAN/postinst
 
     mkdir -p "$DESTDIR/usr/share/keyrings"
-    curl -fsSL -o "$DESTDIR/usr/share/keyrings/github-cli-archive-keyring.gpg" "https://cli.github.com/packages/githubcli-archive-keyring.gpg"
+    curl -fsSL -o "$DESTDIR/usr/share/keyrings/github-cli.gpg" "https://cli.github.com/packages/githubcli.gpg"
 
     mkdir -p "$DESTDIR/etc/apt/sources.list.d"
     cat << EOF > "$DESTDIR/etc/apt/sources.list.d/github-cli.list"
-deb [arch=ARCH signed-by=/usr/share/keyrings/github-cli-archive-keyring.gpg] https://cli.github.com/packages stable main
+deb [arch=ARCH signed-by=/usr/share/keyrings/github-cli.gpg] https://cli.github.com/packages stable main
 EOF
 }

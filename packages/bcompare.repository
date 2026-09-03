@@ -14,11 +14,11 @@ function build() {
 
     mkdir -p $DESTDIR/usr/share/keyrings
 
-    curl -fsSL https://www.scootersoftware.com/DEB-GPG-KEY-scootersoftware.asc | gpg --dearmor -o $DESTDIR/usr/share/keyrings/scootersoftware-archive-keyring.gpg
+    curl -fsSL https://www.scootersoftware.com/DEB-GPG-KEY-scootersoftware.asc | gpg --dearmor -o $DESTDIR/usr/share/keyrings/scootersoftware.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
 
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/scootersoftware.list
-deb [arch=amd64 signed-by=/usr/share/keyrings/scootersoftware-archive-keyring.gpg] https://www.scootersoftware.com/debian/ bcompare5 non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/scootersoftware.gpg] https://www.scootersoftware.com/debian/ bcompare5 non-free
 EOF
 }

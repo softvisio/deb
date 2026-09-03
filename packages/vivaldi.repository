@@ -13,10 +13,10 @@ function build() {
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor -o $DESTDIR/usr/share/keyrings/vivaldi-archive-keyring.gpg
+    curl -fsSL https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor -o $DESTDIR/usr/share/keyrings/vivaldi.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/vivaldi.list
-deb [arch=amd64,armhf signed-by=/usr/share/keyrings/vivaldi-archive-keyring.gpg] https://repo.vivaldi.com/archive/deb stable main
+deb [arch=amd64,armhf signed-by=/usr/share/keyrings/vivaldi.gpg] https://repo.vivaldi.com/archive/deb stable main
 EOF
 }
