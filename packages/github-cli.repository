@@ -11,7 +11,7 @@ DEPENDS=
 
 function build() {
     mkdir -p "$DESTDIR/usr/share/keyrings"
-    curl -fsSL -o "$DESTDIR/usr/share/keyrings/github-cli.gpg" "https://cli.github.com/packages/githubcli.gpg"
+    curl -fsSL -o "$DESTDIR/usr/share/keyrings/github-cli.gpg" "https://cli.github.com/packages/githubcli-archive-keyring.gpg"
 
     mkdir -p "$DESTDIR/etc/apt/sources.list.d"
     cat << EOF > "$DESTDIR/etc/apt/sources.list.d/github-cli.list"
