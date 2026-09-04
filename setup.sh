@@ -17,7 +17,7 @@ component=main
 version_id=$(. /etc/os-release && echo $VERSION_ID)
 
 function _remove() {
-    rm -rf /usr/share/keyrings/${repo_name}.gpg
+    rm -rf /usr/share/keyrings/${repo_name}.repository.gpg
     rm -rf /etc/apt/sources.list.d/${repo_name}.list
 
     apt-get clean all
@@ -27,12 +27,12 @@ function _remove() {
 function _install() {
     apt-get install -y gpg
 
-    curl -fsSL "https://raw.githubusercontent.com/$repo_slug/main/public-key.asc" | gpg --dearmor -o "/usr/share/keyrings/${repo_name}.gpg"
+    curl -fsSL "https://raw.githubusercontent.com/$repo_slug/main/public-key.asc" | gpg --dearmor -o "/usr/share/keyrings/${repo_name}.repository.gpg"
 
     # deb [trusted=yes] https://raw.githubusercontent.com/$repo_slug/ $version_id $component
 
     cat << EOF > "/etc/apt/sources.list.d/${repo_name}.list"
-deb [signed-by=/usr/share/keyrings/${repo_name}.gpg] https://raw.githubusercontent.com/$repo_slug/ $version_id $component
+deb [signed-by=/usr/share/keyrings/${repo_name}.repository.gpg] https://raw.githubusercontent.com/$repo_slug/ $version_id $component
 EOF
 
 }

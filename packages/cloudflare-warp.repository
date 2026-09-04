@@ -23,10 +23,10 @@ EOF
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | gpg --dearmor -o $DESTDIR/usr/share/keyrings/cloudflare-warp.gpg
+    curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | gpg --dearmor -o $DESTDIR/usr/share/keyrings/cloudflare-warp.repository.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/cloudflare-warp.list
-deb [signed-by=/usr/share/keyrings/cloudflare-warp.gpg] https://pkg.cloudflareclient.com VERSION_CODENAME main
+deb [signed-by=/usr/share/keyrings/cloudflare-warp.repository.gpg] https://pkg.cloudflareclient.com VERSION_CODENAME main
 EOF
 }

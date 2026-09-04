@@ -23,10 +23,10 @@ EOF
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL "https://nginx.org/keys/nginx_signing.key" | gpg --dearmor -o $DESTDIR/usr/share/keyrings/nginx-next.gpg
+    curl -fsSL "https://nginx.org/keys/nginx_signing.key" | gpg --dearmor -o $DESTDIR/usr/share/keyrings/nginx-next.repository.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/nginx-next.list
-deb [signed-by=/usr/share/keyrings/nginx-next.gpg] https://nginx.org/packages/mainline/ubuntu VERSION_CODENAME nginx
+deb [signed-by=/usr/share/keyrings/nginx-next.repository.gpg] https://nginx.org/packages/mainline/ubuntu VERSION_CODENAME nginx
 EOF
 }

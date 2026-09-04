@@ -19,7 +19,7 @@ bash <(echo "$script") remove
 Import public key
 
 ```sh
-curl -fsSL "https://raw.githubusercontent.com/softvisio/deb-repository/main/public-key.asc" | gpg --dearmor -o "/usr/share/keyrings/softvisio.gpg"
+curl -fsSL "https://raw.githubusercontent.com/softvisio/deb-repository/main/public-key.asc" | gpg --dearmor -o "/usr/share/keyrings/softvisio.repository.gpg"
 ```
 
 ### GPG

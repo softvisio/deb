@@ -26,10 +26,10 @@ EOF
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x${FINGERPRINT}" | gpg --dearmor -o $DESTDIR/usr/share/keyrings/git.gpg
+    curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x${FINGERPRINT}" | gpg --dearmor -o $DESTDIR/usr/share/keyrings/git.repository.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/git.list
-deb [signed-by=/usr/share/keyrings/git.gpg] https://ppa.launchpadcontent.net/git-core/ppa/ubuntu VERSION_CODENAME main
+deb [signed-by=/usr/share/keyrings/git.repository.gpg] https://ppa.launchpadcontent.net/git-core/ppa/ubuntu VERSION_CODENAME main
 EOF
 }

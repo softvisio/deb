@@ -13,10 +13,10 @@ function build() {
     apt-get install -y gpg
 
     mkdir -p $DESTDIR/usr/share/keyrings
-    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o $DESTDIR/usr/share/keyrings/microsoft-edge.gpg
+    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o $DESTDIR/usr/share/keyrings/microsoft-edge.repository.gpg
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/microsoft-edge.list
-deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main
+deb [signed-by=/usr/share/keyrings/microsoft-edge.repository.gpg] https://packages.microsoft.com/repos/edge stable main
 EOF
 }
