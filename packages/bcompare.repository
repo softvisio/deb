@@ -19,6 +19,6 @@ function build() {
     mkdir -p $DESTDIR/etc/apt/sources.list.d
 
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/scootersoftware.list
-deb [arch=amd64 signed-by=/usr/share/keyrings/scootersoftware.gpg] https://www.scootersoftware.com/debian/ bcompare5 non-free
+deb [signed-by=/usr/share/keyrings/scootersoftware.gpg] https://www.scootersoftware.com/debian/ bcompare5 non-free
 EOF
 }

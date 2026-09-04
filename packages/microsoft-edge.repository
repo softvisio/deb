@@ -17,6 +17,6 @@ function build() {
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/microsoft-edge.list
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main
+deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main
 EOF
 }

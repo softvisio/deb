@@ -17,6 +17,6 @@ function build() {
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/vivaldi.list
-deb [arch=amd64,armhf signed-by=/usr/share/keyrings/vivaldi.gpg] https://repo.vivaldi.com/archive/deb stable main
+deb [signed-by=/usr/share/keyrings/vivaldi.gpg] https://repo.vivaldi.com/archive/deb stable main
 EOF
 }

@@ -15,7 +15,6 @@ function build() {
 
 VERSION_CODENAME=\$(source /etc/os-release && echo \$VERSION_CODENAME)
 
-sed -i -e "/ARCH/ s/ARCH/\$(dpkg --print-architecture)/" /etc/apt/sources.list.d/docker.list
 sed -i -e "/VERSION_CODENAME/ s/VERSION_CODENAME/\$VERSION_CODENAME/" /etc/apt/sources.list.d/docker.list
 EOF
     chmod +x $DEBIAN/postinst
@@ -28,6 +27,6 @@ EOF
 
     mkdir -p $DESTDIR/etc/apt/sources.list.d
     cat << EOF > $DESTDIR/etc/apt/sources.list.d/docker.list
-deb [arch=ARCH signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu VERSION_CODENAME stable
+deb [signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu VERSION_CODENAME stable
 EOF
 }
